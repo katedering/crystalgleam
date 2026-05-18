@@ -90,3 +90,4 @@
 	tilecoll FLOOR, FLOOR, WALL, FLOOR ; 59
 	tilecoll BOOKSHELF, FLOOR, FLOOR, FLOOR ; 5a
 	tilecoll WALL, WALL, WALL, WALL ; 5b
+	tilecoll WALL, WALL, FLOOR, FLOOR ; 5c
