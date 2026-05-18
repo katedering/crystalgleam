@@ -292,6 +292,9 @@ PokedexDataPointerTable:
 	dba FarigirafPokedexEntry
 	dba ClodsirePokedexEntry
 	dba AnnihilapePokedexEntry
+	dba EeveeonPokedexEntry
+	dba MissingnoPokedexEntry
+	dba GorochuPokedexEntry
 	assert_table_length NUM_SPECIES
 
 	dba GyaradosRedPokedexEntry
@@ -347,5 +350,17 @@ PokedexDataPointerTable:
 	dba TaurosPaldeanWaterPokedexEntry
 
 	dba UrsalunaBloodmoonPokedexEntry
-
+	
+	dba EeveeEonPokedexEntry
+	dba VaporeonEonPokedexEntry
+	dba JolteonEonPokedexEntry
+	dba FlareonEonPokedexEntry
+	dba EspeonEonPokedexEntry
+	dba UmbreonEonPokedexEntry
+	dba LeafeonEonPokedexEntry
+	dba GlaceonEonPokedexEntry
+	dba SylveonEonPokedexEntry
+	
+	dba PikachuPartnerPokedexEntry
+	dba RaichuPartnerPokedexEntry
 	assert_table_length NUM_EXT_POKEMON

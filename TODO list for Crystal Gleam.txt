@@ -1,0 +1,19 @@
+TODO list for Crystal Gleam:
+
+Add new move tutors.
+Tweak move effects.
+Add new abilities.
+Half DONE // Add Missingno. (and extreme form)
+GET EON FORM / GOROCHU / MISSINGNO SPRITES AND ANIMATION ART!!! (BIG THING TO DO HERE THANKS)
+Redo Eon Eevee event.
+Sweeping balance pass over the entire 'dex.
+
+LERN2CODE and MAKE A PROPER RANDOMIZER *yeah this isn't happening any time soon, stretch goals folks!*
+
+Once everything is nice and tidy:
+
+Longterm goal: Custom cries?
+
+----------------------------------
+
+Far Future Goals: Make a stripped-down ROM to start work on Project: LEGENDZ

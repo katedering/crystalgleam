@@ -82,6 +82,8 @@ DoKeyItemEffect::
 	dw SquirtBottle       ; KEYITEMEFFECT_SQUIRTBOTTLE
 	dw CardKey            ; KEYITEMEFFECT_CARD_KEY
 	dw BasementKey        ; KEYITEMEFFECT_BASEMENT_KEY
+	dw EvoStoneEffect     ; KEYITEMEFFECT_EON_STONE
+	dw CheaterCardMessage ; KEYITEMEFFECT_CHEATER_CARD
 	assert_table_length NUM_KEY_ITEM_EFFECTS
 
 INCLUDE "data/items/key_effects.asm"
@@ -2834,6 +2836,10 @@ IsntTheTimeMessage:
 	ld hl, IsntTheTimeText
 	jr CantUseItemMessage
 
+CheaterCardMessage:
+	ld hl, CheaterCardText
+	jr CantUseItemMessage
+
 WontHaveAnyEffectMessage:
 	ld hl, WontHaveAnyEffectText
 	; fallthrough
@@ -2868,6 +2874,11 @@ CantChangeTradedMonBallText:
 IsntTheTimeText:
 	; OAK:  ! This isn't the time to use that!
 	text_far _ItemOakWarningText
+	text_end
+
+CheaterCardText:
+	; OAK:  ! You're a cheater? I'm ashamed!
+	text_far _CheaterCardText
 	text_end
 
 WontHaveAnyEffectText:

@@ -295,6 +295,9 @@ MiniIconPointers:
 	mini_icon Farigiraf
 	mini_icon Clodsire
 	mini_icon Annihilape
+	mini_icon Eeveeon
+	mini_icon Missingno
+	mini_icon Gorochu
 	assert_table_length NUM_SPECIES
 
 	mini_icon UnownB
@@ -333,7 +336,6 @@ MiniIconPointers:
 
 	mini_icon PikachuFly ; Fly
 	mini_icon PikachuSurf ; Surf
-	mini_icon Pikachu ; Pika
 	mini_icon Pikachu ; Chuchu
 	mini_icon Pikachu ; Spark
 
@@ -398,5 +400,17 @@ endr
 	mini_icon TaurosPaldeanWater
 
 	mini_icon UrsalunaBloodmoon
-
+	
+	mini_icon EeveeEon
+	mini_icon VaporeonEon
+	mini_icon JolteonEon
+	mini_icon FlareonEon
+	mini_icon EspeonEon
+	mini_icon UmbreonEon
+	mini_icon LeafeonEon
+	mini_icon GlaceonEon
+	mini_icon SylveonEon
+	
+	mini_icon PikachuPartner
+	mini_icon RaichuPartner
 	assert_table_length NUM_UNIQUE_POKEMON

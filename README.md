@@ -1,6 +1,8 @@
-# Pokémon Polished Crystal
+# Pokémon Crystal Gleam
 
-This is a custom Pokémon game based on [the Pokémon Crystal disassembly](https://github.com/pret/pokecrystal).
+This is a custom fork of [Pokémon Polished Crystal](https://github.com/Rangi42/polishedcrystal).
+
+# Original README.md follows
 
 My goal is to create what the title says: an improved, polished version of Pokémon Crystal. It fixes bugs, takes into account the official game changes since 2001, and adds some new ideas of my own. Many features restore what was removed from R/B/Y, or original to HG/SS.
 

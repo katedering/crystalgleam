@@ -62,11 +62,12 @@ OptionsDescriptions:
 	para "Set: just sends"
 	line "out the next foe."
 
-	para "Switch: lets you"
+	para "Switch: tells"
+	line "you the next foe."
+	
+	para "Predict: lets you"
 	line "switch first."
 
-	para "Predict: tells"
-	line "you the next foe."
 	prompt
 
 .Nicknames:

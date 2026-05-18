@@ -20,7 +20,7 @@ HappinessChanges:
 	db -10, -10, -15 ; Used Energy Root (bitter)
 	db -15, -15, -20 ; Used Revival Herb (bitter)
 	db  +3,  +3,  +1 ; Grooming
-	db  +6,  +4,  +0 ; Gained a level in the place where it was caught
+	db  +6,  +4,  +1 ; Gained a level in the place where it was caught
 	db  +5,  +3,  +2 ; Took a photograph
 	db  +5,  +3,  +2 ; Received a blessing
 	db  +2,  +1,  +0 ; Added every step cycle

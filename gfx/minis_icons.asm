@@ -1457,6 +1457,11 @@ AnnihilapeMini::     INCBIN "gfx/minis/annihilape.2bpp.lzp"
 AnnihilapeMiniMask:: INCBIN "gfx/minis/annihilape_mask.1bpp.lzp"
 AnnihilapeIcon::     INCBIN "gfx/icons/annihilape.2bpp.lzp"
 
+SECTION "Missingno Mini Icon", ROMX
+MissingnoMini::     INCBIN "gfx/minis/missingno.2bpp.lzp"
+MissingnoMiniMask:: INCBIN "gfx/minis/missingno_mask.1bpp.lzp"
+MissingnoIcon::     INCBIN "gfx/icons/missingno.2bpp.lzp"
+
 SECTION "UnownB Mini Icon", ROMX
 UnownBMini::     INCBIN "gfx/minis/unown_b.2bpp.lzp"
 UnownBMiniMask:: INCBIN "gfx/minis/unown_b_mask.1bpp.lzp"
@@ -1816,3 +1821,68 @@ SECTION "UrsalunaBloodmoon Mini Icon", ROMX
 UrsalunaBloodmoonMini::     INCBIN "gfx/minis/ursaluna_bloodmoon.2bpp.lzp"
 UrsalunaBloodmoonMiniMask:: INCBIN "gfx/minis/ursaluna_bloodmoon_mask.1bpp.lzp"
 UrsalunaBloodmoonIcon::     INCBIN "gfx/icons/ursaluna_bloodmoon.2bpp.lzp"
+
+SECTION "EeveeEon Mini Icon", ROMX
+EeveeEonMini::     INCBIN "gfx/minis/eevee_eon.2bpp.lzp"
+EeveeEonMiniMask:: INCBIN "gfx/minis/eevee_eon_mask.1bpp.lzp"
+EeveeEonIcon::     INCBIN "gfx/icons/eevee_eon.2bpp.lzp"
+
+SECTION "VaporeonEon Mini Icon", ROMX
+VaporeonEonMini::     INCBIN "gfx/minis/vaporeon_eon.2bpp.lzp"
+VaporeonEonMiniMask:: INCBIN "gfx/minis/vaporeon_eon_mask.1bpp.lzp"
+VaporeonEonIcon::     INCBIN "gfx/icons/vaporeon_eon.2bpp.lzp"
+
+SECTION "JolteonEon Mini Icon", ROMX
+JolteonEonMini::     INCBIN "gfx/minis/jolteon_eon.2bpp.lzp"
+JolteonEonMiniMask:: INCBIN "gfx/minis/jolteon_eon_mask.1bpp.lzp"
+JolteonEonIcon::     INCBIN "gfx/icons/jolteon_eon.2bpp.lzp"
+
+SECTION "FlareonEon Mini Icon", ROMX
+FlareonEonMini::     INCBIN "gfx/minis/flareon_eon.2bpp.lzp"
+FlareonEonMiniMask:: INCBIN "gfx/minis/flareon_eon_mask.1bpp.lzp"
+FlareonEonIcon::     INCBIN "gfx/icons/flareon_eon.2bpp.lzp"
+
+SECTION "EspeonEon Mini Icon", ROMX
+EspeonEonMini::     INCBIN "gfx/minis/espeon_eon.2bpp.lzp"
+EspeonEonMiniMask:: INCBIN "gfx/minis/espeon_eon_mask.1bpp.lzp"
+EspeonEonIcon::     INCBIN "gfx/icons/espeon_eon.2bpp.lzp"
+
+SECTION "UmbreonEon Mini Icon", ROMX
+UmbreonEonMini::     INCBIN "gfx/minis/umbreon_eon.2bpp.lzp"
+UmbreonEonMiniMask:: INCBIN "gfx/minis/umbreon_eon_mask.1bpp.lzp"
+UmbreonEonIcon::     INCBIN "gfx/icons/umbreon_eon.2bpp.lzp"
+
+SECTION "LeafeonEon Mini Icon", ROMX
+LeafeonEonMini::     INCBIN "gfx/minis/leafeon_eon.2bpp.lzp"
+LeafeonEonMiniMask:: INCBIN "gfx/minis/leafeon_eon_mask.1bpp.lzp"
+LeafeonEonIcon::     INCBIN "gfx/icons/leafeon_eon.2bpp.lzp"
+
+SECTION "GlaceonEon Mini Icon", ROMX
+GlaceonEonMini::     INCBIN "gfx/minis/glaceon_eon.2bpp.lzp"
+GlaceonEonMiniMask:: INCBIN "gfx/minis/glaceon_eon_mask.1bpp.lzp"
+GlaceonEonIcon::     INCBIN "gfx/icons/glaceon_eon.2bpp.lzp"
+
+SECTION "SylveonEon Mini Icon", ROMX
+SylveonEonMini::     INCBIN "gfx/minis/sylveon_eon.2bpp.lzp"
+SylveonEonMiniMask:: INCBIN "gfx/minis/sylveon_eon_mask.1bpp.lzp"
+SylveonEonIcon::     INCBIN "gfx/icons/sylveon_eon.2bpp.lzp"
+
+SECTION "Eeveeon Mini Icon", ROMX
+EeveeonMini::     INCBIN "gfx/minis/eeveeon.2bpp.lzp"
+EeveeonMiniMask:: INCBIN "gfx/minis/eeveeon_mask.1bpp.lzp"
+EeveeonIcon::     INCBIN "gfx/icons/eeveeon.2bpp.lzp"
+
+SECTION "PikachuPartner Mini Icon", ROMX
+PikachuPartnerMini::     INCBIN "gfx/minis/pikachu_partner.2bpp.lzp"
+PikachuPartnerMiniMask:: INCBIN "gfx/minis/pikachu_partner_mask.1bpp.lzp"
+PikachuPartnerIcon::     INCBIN "gfx/icons/pikachu_partner.2bpp.lzp"
+
+SECTION "RaichuPartner Mini Icon", ROMX
+RaichuPartnerMini::     INCBIN "gfx/minis/raichu_partner.2bpp.lzp"
+RaichuPartnerMiniMask:: INCBIN "gfx/minis/raichu_partner_mask.1bpp.lzp"
+RaichuPartnerIcon::     INCBIN "gfx/icons/raichu_partner.2bpp.lzp"
+
+SECTION "Gorochu Mini Icon", ROMX
+GorochuMini::     INCBIN "gfx/minis/gorochu.2bpp.lzp"
+GorochuMiniMask:: INCBIN "gfx/minis/gorochu_mask.1bpp.lzp"
+GorochuIcon::     INCBIN "gfx/icons/gorochu.2bpp.lzp"

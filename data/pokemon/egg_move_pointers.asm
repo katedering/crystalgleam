@@ -291,6 +291,9 @@ EggSpeciesMovesPointers::
 	dw GirafarigEggSpeciesMoves         ; Farigiraf
 	dw WooperPaldeanEggSpeciesMoves     ; Clodsire
 	dw MankeyEggSpeciesMoves            ; Annihilape
+	dw EeveeEggSpeciesMoves             ; Eeveeon
+	dw NoEggSpeciesMoves				; Missingno.
+	dw PichuEggSpeciesMoves             ; Gorochu
 	assert_table_length NUM_SPECIES
 
 	dw MagikarpEggSpeciesMoves          ; Gyarados (Red Form)
@@ -347,4 +350,18 @@ EggSpeciesMovesPointers::
 
 	dw TeddiursaEggSpeciesMoves         ; Ursaluna (Bloodmoon Form)
 
+
+	
+	dw EeveeEggSpeciesMoves             ; Eevee (Eon Form)
+	dw EeveeEggSpeciesMoves             ; Vaporeon (Eon Form)
+	dw EeveeEggSpeciesMoves             ; Jolteon (Eon Form)
+	dw EeveeEggSpeciesMoves             ; Flareon (Eon Form)
+	dw EeveeEggSpeciesMoves             ; Espeon (Eon Form)
+	dw EeveeEggSpeciesMoves             ; Umbreon (Eon Form)
+	dw EeveeEggSpeciesMoves             ; Leafeon (Eon Form)
+	dw EeveeEggSpeciesMoves             ; Glaceon (Eon Form)
+	dw EeveeEggSpeciesMoves             ; Sylveon (Eon Form)
+	
+	dw PichuEggSpeciesMoves				; Pikachu (Partner Form)
+	dw PichuEggSpeciesMoves             ; Raichu (Partner Form)
 	assert_table_length NUM_EXT_POKEMON

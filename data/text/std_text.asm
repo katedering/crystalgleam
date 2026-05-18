@@ -155,6 +155,34 @@ PokeComNursePokerusText:
 	line "you anything more."
 	done
 
+NurseCheatText:
+	text "Welcome to our…"
+	
+	para "Oh! A Club member!"
+	
+	para "Wait a moment,"
+	line "please."
+	done
+	
+NurseCheatDoneText:
+	text "Your #mon"
+	line "are all healed up!"
+	done
+
+NurseCheatGoodbyeText:
+	text "Good luck out"
+	line "there, cheater!"
+	done
+
+NurseCheatPokerusText:
+	text "Oh! Your #mon"
+	line "seems to have"
+	cont "#rus."
+	
+	para "That's not a bad"
+	line "thing, at least."
+	done
+
 DifficultBookshelfText:
 	text "It's full of"
 	line "difficult books."
@@ -355,18 +383,23 @@ CoinVendor_IntroText:
 	line "game coins?"
 
 	para "It costs ¥1000 for"
-	line "50 coins. Do you"
+	line "100 coins. Do you"
 	cont "want some?"
 	done
 
-CoinVendor_Buy50CoinsText:
+CoinVendor_Buy100CoinsText:
 	text "Thank you!"
-	line "Here are 50 coins."
+	line "Here are 100 coins."
 	done
 
-CoinVendor_Buy500CoinsText:
+CoinVendor_Buy1000CoinsText:
 	text "Thank you! Here"
-	line "are 500 coins."
+	line "are 1000 coins."
+	done
+
+CoinVendor_Buy5000CoinsText:
+	text "Thank you! Here"
+	line "are 5000 coins."
 	done
 
 CoinVendor_NotEnoughMoneyText:
@@ -467,4 +500,84 @@ HiddenGrottoText:
 
 	para "Will you follow"
 	line "it?"
+	done
+
+AreYouACheaterText:
+	text "Welcome to the"
+	line "Cheater's Club!"
+	
+	para "Do you want an"
+	line "edge over the"
+	cont "competition?"
+	
+	para "Are you prepared"
+	line "to do whatever it"
+	cont "takes to win?"
+	
+	para "Will you join this"
+	line "prestigious club?"
+	done
+
+YouAreACheaterText:
+	text "Great! We'll get"
+	line "your information"
+	cont "sorted, so you"
+	cont "won't have to ask"
+	cont "next time."
+	
+	para "Here's your member-"
+	line "ship card!"
+
+	para "As a bonus, you"
+	line "now get faster"
+	cont "service at any"
+	cont "#mon Center!"
+	done
+
+YouAreNotACheaterText:
+	text "Oh? You don't want"
+	line "to join? Alright,"
+	cont "that's fine too!"
+	
+	para "We hope you change"
+	line "your mind one day!"
+	
+	para "Goodbye for now!"
+	done
+	
+CheatClubText1:
+	text "Welcome to the"
+	line "Cheater's Club!"
+	done
+
+CheatClubText2:	
+	text "What power-up pack"
+	line "would you like?"
+	done
+
+CheatClubCatchPackText:
+	text "Enjoy catching"
+	line "'em all with this"
+	cont "pack!"
+	done
+
+CheatClubTrainPackText:
+	text "You'll definitely"
+	line "be the very best"
+	cont "with this pack!"
+	done
+
+CheatClubMoneyPackText:
+	text "Look at money-bags"
+	line "over here!"
+	
+	para "Cha-ching!"
+	done
+
+CheatClubCancelText:
+	text "Nothing for you"
+	line "this time?"
+	
+	para "Okay! Enjoy your"
+	line "day! Goodbye!"
 	done

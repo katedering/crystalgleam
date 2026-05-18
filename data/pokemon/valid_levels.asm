@@ -296,4 +296,7 @@ endc
 	db  32, 100 ; Farigiraf
 	db  20, 100 ; Clodsire
 	db  56, 100 ; Annihilape
+	db 255, 255 ; Eeveeon
+	db 255, 255 ; Missingno.
+	db 255, 255 ; Gorochu
 	assert_table_length NUM_SPECIES

@@ -3154,7 +3154,7 @@ SECTION "_InitialOptionsText", ROMX
 _InitialOptionsText::
 	text "Please choose how"
 	line "you want to play"
-	cont "Polished Crystal."
+	cont "Crystal Gleam."
 	prompt
 
 SECTION "_ElmText1", ROMX
@@ -3248,7 +3248,7 @@ if !DEF(DEBUG)
 	line "emulator has bugs"
 
 	para "that may crash"
-	line "Polished Crystal."
+	line "Crystal Gleam."
 
 	para "Please use a more"
 	line "accurate emulator,"
@@ -4474,4 +4474,11 @@ CantChangeTradedMonBallTextData::
 	text "You can't change"
 	line "the Ball a traded"
 	cont "#mon is in."
+	prompt
+
+SECTION "_CheaterCardText", ROMX
+_CheaterCardText::
+	text "OAK: <PLAYER>!"
+	line "You're a cheater?"
+	cont "I'm ashamed!"
 	prompt

@@ -1543,33 +1543,47 @@ CoinVendor_IntroScript:
 	loadmenu .MenuDataHeader
 	verticalmenu
 	closewindow
-	ifequalfwd $1, .Buy50
-	ifequalfwd $2, .Buy500
+	ifequalfwd $1, .Buy100
+	ifequalfwd $2, .Buy1000
+	ifequalfwd $3, .Buy5000
 	sjumpfwd .Cancel
 
-.Buy50:
-	checkcoins MAX_COINS - 50
-	ifequalfwd HAVE_MORE, .CoinCaseFull
-	checkmoney YOUR_MONEY, 1000
-	ifequalfwd HAVE_LESS, .NotEnoughMoney
-	givecoins 50
-	takemoney YOUR_MONEY, 1000
+.Buy100:
+	checkcoins 49900
+	ifequalfwd $0, .CoinCaseFull
+	checkmoney $0, 1000
+	ifequalfwd $2, .NotEnoughMoney
+	givecoins 100
+	takemoney $0, 1000
 	waitsfx
 	playsound SFX_TRANSACTION
-	farwritetext CoinVendor_Buy50CoinsText
+	farwritetext CoinVendor_Buy100CoinsText
 	waitbutton
 	sjump .loop
 
-.Buy500:
-	checkcoins MAX_COINS - 500
-	ifequalfwd HAVE_MORE, .CoinCaseFull
-	checkmoney YOUR_MONEY, 10000
-	ifequalfwd HAVE_LESS, .NotEnoughMoney
-	givecoins 500
-	takemoney YOUR_MONEY, 10000
+.Buy1000:
+	checkcoins 49000
+	ifequalfwd $0, .CoinCaseFull
+	checkmoney $0, 10000
+	ifequalfwd $2, .NotEnoughMoney
+	givecoins 1000
+	takemoney $0, 10000
 	waitsfx
 	playsound SFX_TRANSACTION
-	farwritetext CoinVendor_Buy500CoinsText
+	farwritetext CoinVendor_Buy1000CoinsText
+	waitbutton
+	sjump .loop
+	
+.Buy5000
+	checkcoins 45000
+	ifequalfwd $0, .CoinCaseFull
+	checkmoney $0, 50000
+	ifequalfwd $2, .NotEnoughMoney
+	givecoins 5000
+	takemoney $0, 50000
+	waitsfx
+	playsound SFX_TRANSACTION
+	farwritetext CoinVendor_Buy5000CoinsText
 	waitbutton
 	sjump .loop
 

@@ -292,4 +292,7 @@ PokemonNames::
 	rawchar "Farigiraf@"
 	rawchar "Clodsire@@"
 	rawchar "Annihilape"
+	rawchar "Eeveeon@@@"
+	rawchar "Missingno."
+	rawchar "Gorochu@@@"
 	assert_table_length NUM_SPECIES + 1

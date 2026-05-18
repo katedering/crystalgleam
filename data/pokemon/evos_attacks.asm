@@ -474,7 +474,7 @@ endc
 	learnset 56, BULK_UP ; Coil → TM move
 	learnset 63, GUNK_SHOT
 
-	evos_attacks Pikachu
+	evos_attacks PikachuPlain
 	evo_data EVOLVE_ITEM, THUNDERSTONE, RAICHU, PLAIN_FORM
 	evo_data EVOLVE_ITEM, ODD_SOUVENIR, RAICHU, ALOLAN_FORM
 	learnset 1, THUNDERSHOCK
@@ -495,6 +495,30 @@ endc
 	learnset 50, WILD_CHARGE
 	learnset 53, LIGHT_SCREEN
 	learnset 58, THUNDER
+	
+	evos_attacks PikachuPartner
+	evo_data EVOLVE_ITEM, THUNDERSTONE, RAICHU, RAICHU_PARTNER_FORM
+	learnset 1, THUNDERSHOCK
+	learnset 1, LEER ; Tail Whip → similar move
+	learnset 5, GROWL
+	learnset 7, CHARM ; Play Nice → Pichu move
+	learnset 10, QUICK_ATTACK
+	learnset 13, DOUBLE_KICK ; Electro Ball → LGPE move
+	learnset 18, THUNDER_WAVE
+	learnset 21, MUD_SLAP ; Feint → GSC TM move
+	learnset 23, DOUBLE_TEAM
+	learnset 26, SPARK
+	learnset 29, IRON_TAIL ; Nuzzle → TM move
+	learnset 34, EXTREMESPEED ; Discharge → event move
+	learnset 37, BODY_SLAM ; Slam → TM move
+	learnset 42, THUNDERBOLT
+	learnset 45, AGILITY
+	learnset 50, WILD_CHARGE
+	learnset 53, LIGHT_SCREEN
+	learnset 58, THUNDER
+	learnset 64, VOLT_SWITCH
+	learnset 72, RAIN_DANCE
+	learnset 80, ZAP_CANNON
 
 	evos_attacks RaichuPlain
 	learnset 1, THUNDERSHOCK
@@ -502,6 +526,22 @@ endc
 	learnset 1, QUICK_ATTACK
 	learnset 1, THUNDERBOLT ; evolution move
 	learnset 1, REVERSAL ; Sw/Sh move
+	learnset 26, THUNDER_WAVE
+	learnset 34, SPARK
+	learnset 50, THUNDERBOLT
+	learnset 64, THUNDER
+	
+	evos_attacks RaichuPartner
+	evo_data EVOLVE_TRADE, LINKING_CORD, GOROCHU
+	learnset 1, THUNDERSHOCK
+	learnset 1, LEER ; Tail Whip → similar move
+	learnset 1, QUICK_ATTACK
+	learnset 1, THUNDER ; evolution move
+	learnset 1, REVERSAL ; Sw/Sh move
+	learnset 26, THUNDER_WAVE
+	learnset 34, SPARK
+	learnset 50, THUNDERBOLT
+	learnset 64, THUNDER
 
 	evos_attacks RaichuAlolan
 	learnset 1, THUNDERSHOCK
@@ -510,6 +550,10 @@ endc
 	learnset 1, THUNDERBOLT
 	learnset 1, PSYCHIC_M ; evolution move
 	learnset 1, REVERSAL ; Sw/Sh move
+	learnset 26, THUNDER_WAVE
+	learnset 34, SPARK
+	learnset 50, THUNDERBOLT
+	learnset 64, THUNDER
 
 	evos_attacks SandshrewPlain
 	evo_data EVOLVE_LEVEL, 22, SANDSLASH, PLAIN_FORM
@@ -701,6 +745,11 @@ endc
 	learnset 1, MINIMIZE
 	learnset 1, METRONOME
 	learnset 1, DOUBLE_SLAP
+	learnset 18, SWEET_KISS
+	learnset 27, TRI_ATTACK
+	learnset 36, METRONOME
+	learnset 45, BODY_SLAM
+	learnset 60, MOONBLAST
 
 	evos_attacks VulpixPlain
 	evo_data EVOLVE_ITEM, FIRE_STONE, NINETALES, PLAIN_FORM
@@ -756,6 +805,10 @@ endc
 	learnset 1, QUICK_ATTACK
 	learnset 1, CONFUSE_RAY
 	learnset 1, SAFEGUARD
+	learnset 25, FIRE_SPIN
+	learnset 35, WILL_O_WISP
+	learnset 46, FIRE_BLAST
+	learnset 58, FLARE_BLITZ
 
 	evos_attacks NinetalesAlolan
 	learnset 1, DAZZLINGLEAM ; evolution move
@@ -764,6 +817,10 @@ endc
 	learnset 1, ICE_SHARD
 	learnset 1, CONFUSE_RAY
 	learnset 1, SAFEGUARD
+	learnset 17, ICE_SHARD
+	learnset 32, AURORA_BEAM
+	learnset 50, BLIZZARD
+	learnset 60, MOONBLAST
 
 	evos_attacks Jigglypuff
 	evo_data EVOLVE_ITEM, MOON_STONE, WIGGLYTUFF
@@ -1224,6 +1281,10 @@ endc
 	learnset 1, FLAME_CHARGE
 	learnset 1, TAKE_DOWN
 	learnset 1, EXTREMESPEED ; evolution move
+	learnset 24, FIRE_SPIN
+	learnset 40, FLAMETHROWER
+	learnset 50, SUNNY_DAY
+	learnset 60, FLARE_BLITZ
 
 	evos_attacks GrowlitheHisuian
 	evo_data EVOLVE_ITEM, FIRE_STONE, ARCANINE, HISUIAN_FORM
@@ -1256,6 +1317,10 @@ endc
 	learnset 1, FLAME_CHARGE
 	learnset 1, TAKE_DOWN
 	learnset 1, EXTREMESPEED ; evolution move
+	learnset 24, FIRE_SPIN
+	learnset 40, FLAMETHROWER
+	learnset 50, POWER_GEM
+	learnset 60, FLARE_BLITZ
 
 	evos_attacks Poliwag
 	evo_data EVOLVE_LEVEL, 25, POLIWHIRL
@@ -1304,6 +1369,7 @@ endc
 	evos_attacks Abra
 	evo_data EVOLVE_LEVEL, 16, KADABRA
 	learnset 1, TELEPORT
+	learnset 20, HIDDEN_POWER
 
 	evos_attacks Kadabra
 	evo_data EVOLVE_TRADE, LINKING_CORD, ALAKAZAM
@@ -1443,6 +1509,7 @@ endc
 	learnset 1, RAZOR_LEAF
 	learnset 32, SUCKER_PUNCH ; Leaf Storm → prior move
 	learnset 44, SWORDS_DANCE ; Leaf Blade → prior move
+	learnset 55, POISON_JAB
 
 	evos_attacks Tentacool
 	evo_data EVOLVE_LEVEL, 30, TENTACRUEL
@@ -2276,6 +2343,8 @@ endc
 	learnset 27, ZEN_HEADBUTT ; Egg Bomb → tutor move
 	learnset 37, POWER_WHIP ; Wood Hammer → new move
 	learnset 47, PETAL_DANCE ; Leaf Storm → new move
+	learnset 57, SOLAR_BEAM
+	learnset 67, PSYCHIC_M
 
 	evos_attacks ExeggutorAlolan
 	learnset 1, TACKLE ; Barrage → new move
@@ -2286,6 +2355,8 @@ endc
 	learnset 27, ZEN_HEADBUTT ; Egg Bomb → tutor move
 	learnset 37, POWER_WHIP ; Wood Hammer → new move
 	learnset 47, OUTRAGE ; Leaf Storm → S/M TM move
+	learnset 57, SOLAR_BEAM
+	learnset 67, GIGA_DRAIN
 
 	evos_attacks Cubone
 	evo_data EVOLVE_LEVEL, 28, MAROWAK, PLAIN_FORM
@@ -2648,6 +2719,7 @@ endc
 	learnset 1, RECOVER
 	learnset 1, SWIFT
 	learnset 40, CONFUSE_RAY
+	learnset 50, PSYCHIC_M
 	learnset 60, TRI_ATTACK ; RBY TM move
 
 	evos_attacks MrMimePlain
@@ -2884,7 +2956,7 @@ endc
 	evos_attacks Ditto
 	learnset 1, TRANSFORM
 
-	evos_attacks Eevee
+	evos_attacks EeveePlain
 	evo_data EVOLVE_ITEM, THUNDERSTONE, JOLTEON
 	evo_data EVOLVE_ITEM, WATER_STONE, VAPOREON
 	evo_data EVOLVE_ITEM, FIRE_STONE, FLAREON
@@ -2913,8 +2985,43 @@ endc
 	learnset 37, DOUBLE_EDGE
 	learnset 41, GROWTH ; Last Resort → event move
 	learnset 45, REVERSAL ; Trump Card → new move
+	
+	evos_attacks EeveeEon
+	evo_data EVOLVE_ITEM, EON_STONE, EEVEEON
+	evo_data EVOLVE_LEVEL, 100, EEVEEON
+	evo_data EVOLVE_ITEM, WATER_STONE, VAPOREON, EON_FORM
+	evo_data EVOLVE_ITEM, THUNDERSTONE, JOLTEON, EON_FORM
+	evo_data EVOLVE_ITEM, FIRE_STONE, FLAREON, EON_FORM
+	evo_data EVOLVE_ITEM, SUN_STONE, ESPEON, EON_FORM
+	evo_data EVOLVE_ITEM, MOON_STONE, UMBREON, EON_FORM
+	evo_data EVOLVE_ITEM, LEAF_STONE, LEAFEON, EON_FORM
+	evo_data EVOLVE_ITEM, ICE_STONE, GLACEON, EON_FORM
+	evo_data EVOLVE_ITEM, SHINY_STONE, SYLVEON, EON_FORM
+	evo_data EVOLVE_LOCATION, ILEX_FOREST, LEAFEON, EON_FORM
+	evo_data EVOLVE_LOCATION, ICE_PATH, GLACEON, EON_FORM
+	learnset 1, GROWL
+	learnset 1, TACKLE
+	learnset 1, LEER ; Tail Whip → similar move
+	learnset 5, MUD_SLAP ; Sand Attack → similar move
+	learnset 9, DOUBLE_KICK ; Baby-Doll Eyes → LGPE move
+	learnset 10, SWIFT
+	learnset 13, QUICK_ATTACK
+	learnset 17, BITE
+	learnset 20, HEAL_BELL ; Refresh → HGSS tutor move
+	learnset 23, THIEF ; Covet → TM move
+	learnset 25, TAKE_DOWN
+	learnset 29, CHARM
+	learnset 33, BATON_PASS
+	learnset 37, DOUBLE_EDGE
+	learnset 41, GROWTH ; Last Resort → event move
+	learnset 45, REVERSAL ; Trump Card → new move
+	learnset 50, PROTECT
+	learnset 58, FALSE_SWIPE
+	learnset 70, HEADBUTT
+	learnset 80, HYPER_VOICE
+	learnset 95, HYPER_BEAM
 
-	evos_attacks Vaporeon
+	evos_attacks VaporeonPlain
 	learnset 1, GROWL
 	learnset 1, TACKLE
 	learnset 1, LEER ; Tail Whip → similar move
@@ -2930,8 +3037,38 @@ endc
 	learnset 37, SCALD ; Muddy Water → TM move
 	learnset 41, DOUBLE_EDGE ; Last Resort → tutor move
 	learnset 45, HYDRO_PUMP
+	
+	evos_attacks VaporeonEon
+	evo_data EVOLVE_ITEM, EON_STONE, EEVEEON
+	evo_data EVOLVE_ITEM, EVERSTONE, EEVEE, EON_FORM
+	evo_data EVOLVE_LEVEL, 100, EEVEEON
+	evo_data EVOLVE_ITEM, THUNDERSTONE, JOLTEON, EON_FORM
+	evo_data EVOLVE_ITEM, FIRE_STONE, FLAREON, EON_FORM
+	evo_data EVOLVE_ITEM, SUN_STONE, ESPEON, EON_FORM
+	evo_data EVOLVE_ITEM, MOON_STONE, UMBREON, EON_FORM
+	evo_data EVOLVE_ITEM, LEAF_STONE, LEAFEON, EON_FORM
+	evo_data EVOLVE_ITEM, ICE_STONE, GLACEON, EON_FORM
+	evo_data EVOLVE_ITEM, SHINY_STONE, SYLVEON, EON_FORM
+	evo_data EVOLVE_LOCATION, ILEX_FOREST, LEAFEON, EON_FORM
+	evo_data EVOLVE_LOCATION, ICE_PATH, GLACEON, EON_FORM
+	learnset 1, GROWL
+	learnset 1, TACKLE
+	learnset 1, LEER ; Tail Whip → similar move
+	learnset 1, WATER_GUN ; evolution move
+	learnset 5, MUD_SLAP ; Sand Attack → similar move
+	learnset 9, DOUBLE_KICK ; Baby-Doll Eyes → LGPE move
+	learnset 13, QUICK_ATTACK
+	learnset 17, WATER_PULSE
+	learnset 20, AURORA_BEAM
+	learnset 25, RECOVER ; Aqua Ring → similar move
+	learnset 29, BARRIER ; Acid Armor → similar move
+	learnset 33, HAZE
+	learnset 37, SCALD ; Muddy Water → TM move
+	learnset 41, DOUBLE_EDGE ; Last Resort → tutor move
+	learnset 45, HYDRO_PUMP
+	learnset 51, AQUA_TAIL
 
-	evos_attacks Jolteon
+	evos_attacks JolteonPlain
 	learnset 1, GROWL
 	learnset 1, TACKLE
 	learnset 1, LEER ; Tail Whip → similar move
@@ -2947,8 +3084,38 @@ endc
 	learnset 37, THUNDERBOLT ; Discharge → TM move
 	learnset 41, DOUBLE_EDGE ; Last Resort → tutor move
 	learnset 45, THUNDER
+	
+	evos_attacks JolteonEon
+	evo_data EVOLVE_ITEM, EON_STONE, EEVEEON
+	evo_data EVOLVE_ITEM, EVERSTONE, EEVEE, EON_FORM
+	evo_data EVOLVE_LEVEL, 100, EEVEEON
+	evo_data EVOLVE_ITEM, WATER_STONE, VAPOREON, EON_FORM
+	evo_data EVOLVE_ITEM, FIRE_STONE, FLAREON, EON_FORM
+	evo_data EVOLVE_ITEM, SUN_STONE, ESPEON, EON_FORM
+	evo_data EVOLVE_ITEM, MOON_STONE, UMBREON, EON_FORM
+	evo_data EVOLVE_ITEM, LEAF_STONE, LEAFEON, EON_FORM
+	evo_data EVOLVE_ITEM, ICE_STONE, GLACEON, EON_FORM
+	evo_data EVOLVE_ITEM, SHINY_STONE, SYLVEON, EON_FORM
+	evo_data EVOLVE_LOCATION, ILEX_FOREST, LEAFEON, EON_FORM
+	evo_data EVOLVE_LOCATION, ICE_PATH, GLACEON, EON_FORM
+	learnset 1, GROWL
+	learnset 1, TACKLE
+	learnset 1, LEER ; Tail Whip → similar move
+	learnset 1, THUNDERSHOCK ; evolution move
+	learnset 5, MUD_SLAP ; Sand Attack → similar move
+	learnset 9, DOUBLE_KICK ; Baby-Doll Eyes → LGPE move
+	learnset 13, QUICK_ATTACK
+	learnset 17, DOUBLE_KICK
+	learnset 20, LIGHT_SCREEN ; Thunder Fang → TM move
+	learnset 25, PIN_MISSILE
+	learnset 29, AGILITY
+	learnset 33, THUNDER_WAVE
+	learnset 37, THUNDERBOLT ; Discharge → TM move
+	learnset 41, DOUBLE_EDGE ; Last Resort → tutor move
+	learnset 45, THUNDER
+	learnset 51, RAIN_DANCE
 
-	evos_attacks Flareon
+	evos_attacks FlareonPlain
 	learnset 1, GROWL
 	learnset 1, TACKLE
 	learnset 1, LEER ; Tail Whip → similar move
@@ -2964,6 +3131,36 @@ endc
 	learnset 37, FLAMETHROWER ; Lava Plume → new move
 	learnset 41, DOUBLE_EDGE ; Last Resort → tutor move
 	learnset 45, FLARE_BLITZ
+
+	evos_attacks FlareonEon
+	evo_data EVOLVE_ITEM, EON_STONE, EEVEEON
+	evo_data EVOLVE_ITEM, EVERSTONE, EEVEE, EON_FORM
+	evo_data EVOLVE_LEVEL, 100, EEVEEON
+	evo_data EVOLVE_ITEM, WATER_STONE, VAPOREON, EON_FORM
+	evo_data EVOLVE_ITEM, THUNDERSTONE, JOLTEON, EON_FORM
+	evo_data EVOLVE_ITEM, SUN_STONE, ESPEON, EON_FORM
+	evo_data EVOLVE_ITEM, MOON_STONE, UMBREON, EON_FORM
+	evo_data EVOLVE_ITEM, LEAF_STONE, LEAFEON, EON_FORM
+	evo_data EVOLVE_ITEM, ICE_STONE, GLACEON, EON_FORM
+	evo_data EVOLVE_ITEM, SHINY_STONE, SYLVEON, EON_FORM
+	evo_data EVOLVE_LOCATION, ILEX_FOREST, LEAFEON, EON_FORM
+	evo_data EVOLVE_LOCATION, ICE_PATH, GLACEON, EON_FORM
+	learnset 1, GROWL
+	learnset 1, TACKLE
+	learnset 1, LEER ; Tail Whip → similar move
+	learnset 1, EMBER ; evolution move
+	learnset 5, MUD_SLAP ; Sand Attack → similar move
+	learnset 9, DOUBLE_KICK ; Baby-Doll Eyes → LGPE move
+	learnset 13, QUICK_ATTACK
+	learnset 17, BITE
+	learnset 20, FIRE_SPIN ; Fire Fang → Fire Spin
+	learnset 25, FLAME_CHARGE ; Fire Spin → TM move
+	learnset 29, SCARY_FACE
+	learnset 33, SMOKESCREEN ; Smog → new move
+	learnset 37, FLAMETHROWER ; Lava Plume → new move
+	learnset 41, DOUBLE_EDGE ; Last Resort → tutor move
+	learnset 45, FLARE_BLITZ
+	learnset 51, WILL_O_WISP
 
 	evos_attacks Porygon
 	evo_data EVOLVE_TRADE, UPGRADE, PORYGON2
@@ -3308,7 +3505,7 @@ endc
 	learnset 20, DISARM_VOICE ; Magical Leaf → new move
 	learnset 23, ENERGY_BALL ; Natural Gift → tutor move
 	learnset 28, ANCIENTPOWER ; Sweet Scent → HGSS tutor move
-	learnset 31, GROWTH ; Light Screen → new move
+	learnset 31, DAZZLINGLEAM ; Light Screen → TM move
 	learnset 34, BODY_SLAM
 	learnset 39, SAFEGUARD
 	learnset 42, PLAY_ROUGH ; Aromatherapy → new move
@@ -3329,7 +3526,7 @@ endc
 	learnset 22, DISARM_VOICE ; Magical Leaf → new move
 	learnset 26, ENERGY_BALL ; Natural Gift → tutor move
 	learnset 32, ANCIENTPOWER ; Sweet Scent → HGSS tutor move
-	learnset 36, GROWTH ; Light Screen → new move
+	learnset 36, DAZZLINGLEAM ; Light Screen → TM move
 	learnset 40, BODY_SLAM
 	learnset 43, SAFEGUARD
 	learnset 47, PLAY_ROUGH ; Aromatherapy → new move
@@ -3350,7 +3547,7 @@ endc
 	learnset 22, DISARM_VOICE ; Magical Leaf → new move
 	learnset 26, ENERGY_BALL ; Natural Gift → tutor move
 	learnset 34, ANCIENTPOWER ; Sweet Scent → HGSS tutor move
-	learnset 40, GROWTH ; Light Screen → new move
+	learnset 40, DAZZLINGLEAM ; Light Screen → TM move
 	learnset 46, BODY_SLAM
 	learnset 50, SAFEGUARD
 	learnset 56, PLAY_ROUGH ; Aromatherapy → new move
@@ -3358,6 +3555,7 @@ endc
 	learnset 66, HEAL_BELL ; Aromatherapy → similar move
 	learnset 72, OUTRAGE ; HGSS tutor move
 	learnset 80, MOONBLAST ; new move
+	learnset 90, DRAGON_PULSE ; Because why not!
 
 	evos_attacks Cyndaquil
 	evo_data EVOLVE_LEVEL, 14, QUILAVA
@@ -3415,6 +3613,7 @@ endc
 	learnset 69, DOUBLE_EDGE
 	learnset 74, EARTHQUAKE ; Burn Up → TM move
 	learnset 81, FLARE_BLITZ ; Eruption → egg move
+	learnset 90, ANCIENTPOWER ; Because why not!
 
 	evos_attacks TyphlosionHisuian
 	learnset 1, SHADOW_CLAW ; evolution move
@@ -3496,6 +3695,7 @@ endc
 	learnset 73, AQUA_TAIL
 	learnset 78, CLOSE_COMBAT ; Superpower → similar move
 	learnset 84, HYDRO_PUMP
+	learnset 90, LEECH_LIFE ; Because why not!
 
 	evos_attacks Sentret
 	evo_data EVOLVE_LEVEL, 15, FURRET
@@ -4148,7 +4348,7 @@ endc
 	learnset 48, HAZE
 	learnset 53, AQUA_TAIL ; Muddy Water → event move
 
-	evos_attacks Espeon
+	evos_attacks EspeonPlain
 	learnset 1, GROWL
 	learnset 1, TACKLE
 	learnset 1, LEER ; Tail Whip → similar move
@@ -4165,7 +4365,37 @@ endc
 	learnset 41, DOUBLE_EDGE ; Last Resort → tutor move
 	learnset 45, POWER_GEM ; Power Swap → SV TM move
 
-	evos_attacks Umbreon
+	evos_attacks EspeonEon
+	evo_data EVOLVE_ITEM, EON_STONE, EEVEEON
+	evo_data EVOLVE_ITEM, EVERSTONE, EEVEE, EON_FORM
+	evo_data EVOLVE_LEVEL, 100, EEVEEON
+	evo_data EVOLVE_ITEM, WATER_STONE, VAPOREON, EON_FORM
+	evo_data EVOLVE_ITEM, THUNDERSTONE, JOLTEON, EON_FORM
+	evo_data EVOLVE_ITEM, FIRE_STONE, FLAREON, EON_FORM
+	evo_data EVOLVE_ITEM, MOON_STONE, UMBREON, EON_FORM
+	evo_data EVOLVE_ITEM, LEAF_STONE, LEAFEON, EON_FORM
+	evo_data EVOLVE_ITEM, ICE_STONE, GLACEON, EON_FORM
+	evo_data EVOLVE_ITEM, SHINY_STONE, SYLVEON, EON_FORM
+	evo_data EVOLVE_LOCATION, ILEX_FOREST, LEAFEON, EON_FORM
+	evo_data EVOLVE_LOCATION, ICE_PATH, GLACEON, EON_FORM
+	learnset 1, GROWL
+	learnset 1, TACKLE
+	learnset 1, LEER ; Tail Whip → similar move
+	learnset 1, CONFUSION ; evolution move
+	learnset 5, MUD_SLAP ; Sand Attack → similar move
+	learnset 9, DOUBLE_KICK ; Baby-Doll Eyes → LGPE move
+	learnset 13, QUICK_ATTACK
+	learnset 17, SWIFT
+	learnset 20, PSYBEAM
+	learnset 25, FUTURE_SIGHT
+	learnset 29, REFLECT ; Psych Up → event move
+	learnset 33, HEALINGLIGHT ; Morning Sun → similar move
+	learnset 37, PSYCHIC_M
+	learnset 41, DOUBLE_EDGE ; Last Resort → tutor move
+	learnset 45, POWER_GEM ; Power Swap → SV TM move
+	learnset 51, AURA_SPHERE
+
+	evos_attacks UmbreonPlain
 	learnset 1, GROWL
 	learnset 1, TACKLE
 	learnset 1, LEER ; Tail Whip → similar move
@@ -4181,6 +4411,36 @@ endc
 	learnset 37, SUCKER_PUNCH ; Mean Look → tutor move
 	learnset 41, DOUBLE_EDGE ; Last Resort → tutor move
 	learnset 45, MEAN_LOOK ; Guard Swap → Mean Look
+
+	evos_attacks UmbreonEon
+	evo_data EVOLVE_ITEM, EON_STONE, EEVEEON
+	evo_data EVOLVE_ITEM, EVERSTONE, EEVEE, EON_FORM
+	evo_data EVOLVE_LEVEL, 100, EEVEEON
+	evo_data EVOLVE_ITEM, WATER_STONE, VAPOREON, EON_FORM
+	evo_data EVOLVE_ITEM, THUNDERSTONE, JOLTEON, EON_FORM
+	evo_data EVOLVE_ITEM, FIRE_STONE, FLAREON, EON_FORM
+	evo_data EVOLVE_ITEM, SUN_STONE, ESPEON, EON_FORM
+	evo_data EVOLVE_ITEM, LEAF_STONE, LEAFEON, EON_FORM
+	evo_data EVOLVE_ITEM, ICE_STONE, GLACEON, EON_FORM
+	evo_data EVOLVE_ITEM, SHINY_STONE, SYLVEON, EON_FORM
+	evo_data EVOLVE_LOCATION, ILEX_FOREST, LEAFEON, EON_FORM
+	evo_data EVOLVE_LOCATION, ICE_PATH, GLACEON, EON_FORM
+	learnset 1, GROWL
+	learnset 1, TACKLE
+	learnset 1, LEER ; Tail Whip → similar move
+	learnset 1, PURSUIT ; evolution move
+	learnset 5, MUD_SLAP ; Sand Attack → similar move
+	learnset 9, DOUBLE_KICK ; Baby-Doll Eyes → LGPE move
+	learnset 13, QUICK_ATTACK
+	learnset 17, CONFUSE_RAY
+	learnset 20, FEINT_ATTACK
+	learnset 25, TOXIC ; Assurance → TM move
+	learnset 29, SCREECH
+	learnset 33, HEALINGLIGHT ; Moonlight → similar move
+	learnset 37, SUCKER_PUNCH ; Mean Look → tutor move
+	learnset 41, DOUBLE_EDGE ; Last Resort → tutor move
+	learnset 45, MEAN_LOOK ; Guard Swap → Mean Look
+	learnset 51, DARK_PULSE
 
 	evos_attacks Murkrow
 	evo_data EVOLVE_ITEM, DUSK_STONE, HONCHKROW
@@ -4967,6 +5227,7 @@ endc
 	learnset 71, SKETCH
 	learnset 81, SKETCH
 	learnset 91, SKETCH
+	learnset 100, SKETCH ; because yes
 
 	evos_attacks Tyrogue
 	evo_data EVOLVE_STAT, 20, ATK_LT_DEF, HITMONCHAN
@@ -5575,7 +5836,7 @@ endc
 	learnset 57, BUG_BUZZ
 	learnset 62, FLY ; new move
 
-	evos_attacks Leafeon
+	evos_attacks LeafeonPlain
 	learnset 1, GROWL
 	learnset 1, TACKLE
 	learnset 1, LEER ; Tail Whip → similar move
@@ -5591,8 +5852,37 @@ endc
 	learnset 37, SEED_BOMB ; Sunny Day → tutor move
 	learnset 41, DOUBLE_EDGE ; Last Resort → tutor move
 	learnset 45, SUNNY_DAY ; Leaf Blade → Sunny Day
+	
+	evos_attacks LeafeonEon
+	evo_data EVOLVE_ITEM, EON_STONE, EEVEEON
+	evo_data EVOLVE_ITEM, EVERSTONE, EEVEE, EON_FORM
+	evo_data EVOLVE_LEVEL, 100, EEVEEON
+	evo_data EVOLVE_ITEM, THUNDERSTONE, JOLTEON, EON_FORM
+	evo_data EVOLVE_ITEM, WATER_STONE, VAPOREON, EON_FORM
+	evo_data EVOLVE_ITEM, FIRE_STONE, FLAREON, EON_FORM
+	evo_data EVOLVE_ITEM, SUN_STONE, ESPEON, EON_FORM
+	evo_data EVOLVE_ITEM, MOON_STONE, UMBREON, EON_FORM
+	evo_data EVOLVE_ITEM, ICE_STONE, GLACEON, EON_FORM
+	evo_data EVOLVE_ITEM, SHINY_STONE, SYLVEON, EON_FORM
+	evo_data EVOLVE_LOCATION, ICE_PATH, GLACEON, EON_FORM
+	learnset 1, GROWL
+	learnset 1, TACKLE
+	learnset 1, LEER ; Tail Whip → similar move
+	learnset 1, RAZOR_LEAF ; evolution move
+	learnset 5, MUD_SLAP ; Sand Attack → similar move
+	learnset 9, DOUBLE_KICK ; Baby-Doll Eyes → LGPE move
+	learnset 13, QUICK_ATTACK
+	learnset 17, BITE ; Grass Whistle → new move
+	learnset 20, ENERGY_BALL ; Magical Leaf → TM move
+	learnset 25, GIGA_DRAIN
+	learnset 29, SWORDS_DANCE
+	learnset 33, HEALINGLIGHT ; Synthesis → similar move
+	learnset 37, SEED_BOMB ; Sunny Day → tutor move
+	learnset 41, DOUBLE_EDGE ; Last Resort → tutor move
+	learnset 45, SUNNY_DAY ; Leaf Blade → Sunny Day
+	learnset 51, POWER_WHIP
 
-	evos_attacks Glaceon
+	evos_attacks GlaceonPlain
 	learnset 1, GROWL
 	learnset 1, TACKLE
 	learnset 1, LEER ; Tail Whip → similar move
@@ -5608,6 +5898,35 @@ endc
 	learnset 37, ICE_BEAM ; Hail → TM move
 	learnset 41, DOUBLE_EDGE ; Last Resort → tutor move
 	learnset 45, BLIZZARD
+
+	evos_attacks GlaceonEon
+	evo_data EVOLVE_ITEM, EON_STONE, EEVEEON
+	evo_data EVOLVE_ITEM, EVERSTONE, EEVEE, EON_FORM
+	evo_data EVOLVE_LEVEL, 100, EEVEEON
+	evo_data EVOLVE_ITEM, THUNDERSTONE, JOLTEON, EON_FORM
+	evo_data EVOLVE_ITEM, WATER_STONE, VAPOREON, EON_FORM
+	evo_data EVOLVE_ITEM, FIRE_STONE, FLAREON, EON_FORM
+	evo_data EVOLVE_ITEM, SUN_STONE, ESPEON, EON_FORM
+	evo_data EVOLVE_ITEM, MOON_STONE, UMBREON, EON_FORM
+	evo_data EVOLVE_ITEM, LEAF_STONE, LEAFEON, EON_FORM
+	evo_data EVOLVE_ITEM, SHINY_STONE, SYLVEON, EON_FORM
+	evo_data EVOLVE_LOCATION, ILEX_FOREST, LEAFEON, EON_FORM
+	learnset 1, GROWL
+	learnset 1, TACKLE
+	learnset 1, LEER ; Tail Whip → similar move
+	learnset 1, ICY_WIND ; evolution move
+	learnset 5, MUD_SLAP ; Sand Attack → similar move
+	learnset 9, DOUBLE_KICK ; Baby-Doll Eyes → LGPE move
+	learnset 13, QUICK_ATTACK
+	learnset 17, BITE
+	learnset 20, ICE_SHARD ; Ice Fang → Ice Shard
+	learnset 25, HAIL ; Ice Shard → Hail
+	learnset 29, BARRIER
+	learnset 33, MIRROR_COAT
+	learnset 37, ICE_BEAM ; Hail → TM move
+	learnset 41, DOUBLE_EDGE ; Last Resort → tutor move
+	learnset 45, BLIZZARD
+	learnset 51, EXTRASENSORY
 
 	evos_attacks Mamoswine
 	learnset 1, ANCIENTPOWER
@@ -5646,7 +5965,7 @@ endc
 	learnset 62, ZAP_CANNON
 	learnset 67, HYPER_BEAM
 
-	evos_attacks Sylveon
+	evos_attacks SylveonPlain
 	learnset 1, GROWL
 	learnset 1, TACKLE
 	learnset 1, LEER ; Tail Whip → similar move
@@ -5662,6 +5981,36 @@ endc
 	learnset 37, MOONBLAST
 	learnset 41, DOUBLE_EDGE ; Last Resort → tutor move
 	learnset 45, PLAY_ROUGH ; Psych Up → new move
+	
+	evos_attacks SylveonEon
+	evo_data EVOLVE_ITEM, EON_STONE, EEVEEON
+	evo_data EVOLVE_ITEM, EVERSTONE, EEVEE, EON_FORM
+	evo_data EVOLVE_LEVEL, 100, EEVEEON
+	evo_data EVOLVE_ITEM, THUNDERSTONE, JOLTEON, EON_FORM
+	evo_data EVOLVE_ITEM, WATER_STONE, VAPOREON, EON_FORM
+	evo_data EVOLVE_ITEM, FIRE_STONE, FLAREON, EON_FORM
+	evo_data EVOLVE_ITEM, SUN_STONE, ESPEON, EON_FORM
+	evo_data EVOLVE_ITEM, MOON_STONE, UMBREON, EON_FORM
+	evo_data EVOLVE_ITEM, LEAF_STONE, LEAFEON, EON_FORM
+	evo_data EVOLVE_ITEM, ICE_STONE, GLACEON, EON_FORM
+	evo_data EVOLVE_LOCATION, ILEX_FOREST, LEAFEON, EON_FORM
+	evo_data EVOLVE_LOCATION, ICE_PATH, GLACEON, EON_FORM
+	learnset 1, GROWL
+	learnset 1, TACKLE
+	learnset 1, LEER ; Tail Whip → similar move
+	learnset 1, DISARM_VOICE ; evolution move
+	learnset 5, MUD_SLAP ; Sand Attack → similar move
+	learnset 9, DOUBLE_KICK ; Baby-Doll Eyes → LGPE move
+	learnset 13, QUICK_ATTACK
+	learnset 17, SWIFT
+	learnset 20, DRAINING_KISS
+	learnset 25, SKILL_SWAP
+	learnset 29, HEAL_BELL ; Misty Terrain → HGSS tutor move
+	learnset 33, LIGHT_SCREEN
+	learnset 37, MOONBLAST
+	learnset 41, DOUBLE_EDGE ; Last Resort → tutor move
+	learnset 45, PLAY_ROUGH ; Psych Up → new move
+	learnset 51, REFLECT
 
 	evos_attacks Perrserker
 	learnset 1, IRON_HEAD ; evolution move
@@ -5935,6 +6284,48 @@ endc
 	learnset 44, SCREECH
 	learnset 48, GUNK_SHOT ; Stomping Tantrum → HGSS tutor move
 	learnset 53, OUTRAGE
+	
+	evos_attacks Eeveeon
+	evo_data EVOLVE_ITEM, EON_STONE, EEVEE, EON_FORM
+	learnset 1, METRONOME ; Evolution move
+	learnset 1, GROWL
+	learnset 1, TACKLE
+	learnset 1, LEER ; Tail Whip → similar move
+	learnset 5, MUD_SLAP ; Sand Attack → similar move
+	learnset 9, DOUBLE_KICK ; Baby-Doll Eyes → LGPE move
+	learnset 10, SWIFT
+	learnset 13, QUICK_ATTACK
+	learnset 17, BITE
+	learnset 20, HEAL_BELL ; Refresh → HGSS tutor move
+	learnset 23, THIEF ; Covet → TM move
+	learnset 25, TAKE_DOWN
+	learnset 29, CHARM
+	learnset 33, BATON_PASS
+	learnset 37, DOUBLE_EDGE
+	learnset 41, GROWTH ; Last Resort → event move
+	learnset 45, REVERSAL ; Trump Card → new move
+	learnset 52, PROTECT
+	learnset 61, FALSE_SWIPE
+	learnset 80, HEADBUTT
+	learnset 90, HYPER_VOICE
+	learnset 99, HYPER_BEAM
+	
+	evos_attacks Missingno
+	learnset 1, PAY_DAY
+	learnset 1, WRAP
+	learnset 1, WATER_GUN
+	learnset 1, FLY
+	
+	evos_attacks Gorochu
+	learnset 1, WILD_CHARGE ; evolution move
+	learnset 1, THUNDERSHOCK
+	learnset 1, LEER ; Tail Whip → similar move
+	learnset 1, QUICK_ATTACK
+	learnset 1, REVERSAL ; Sw/Sh move
+	learnset 26, THUNDER_WAVE
+	learnset 34, SPARK
+	learnset 50, THUNDERBOLT
+	learnset 64, THUNDER
 
 	; Also terminates previous mon's learnset
 	EggEvosAttacks:

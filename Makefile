@@ -1,13 +1,13 @@
-NAME := polishedcrystal
+NAME := crystalgleam
 MODIFIERS :=
-VERSION := 3.2.3
-AUTHOR := RANGI42
+VERSION := 3.2.3c
+AUTHOR := RANGI42+LALA
 
 ROM_NAME = $(NAME)$(MODIFIERS)-$(VERSION)
 EXTENSION := gbc
 
-TITLE := PKPCRYSTAL
-MCODE := PKPC
+TITLE := CRYSGLEAM
+MCODE := CRGL
 ROMVERSION := 0x32
 
 FILLER := 0xff
@@ -34,7 +34,7 @@ RGBASMFLAGS    = -Weverything -Wtruncation=1 -E -Q8 -P includes.asm
 RGBASMVCFLAGS  = $(RGBASMFLAGS) -DVIRTUAL_CONSOLE
 RGBLINKFLAGS   = -Weverything -Wtruncation=1 -M -n $(ROM_NAME).sym -m $(ROM_NAME).map -p $(FILLER)
 RGBLINKVCFLAGS = -Weverything -M -n $(ROM_NAME)_vc.sym -m $(ROM_NAME)_vc.map -p $(FILLER)
-RGBFIXFLAGS    = -Weverything -csjv -t $(TITLE) -i $(MCODE) -n $(ROMVERSION) -p $(FILLER) -k 01 -l 0x33 -m MBC3+TIMER+RAM+BATTERY -r 3
+RGBFIXFLAGS    = -Weverything -csjv -t $(TITLE) -i $(MCODE) -n $(ROMVERSION) -p $(FILLER) -k 01 -l 0x33 -m MBC5+RAM+BATTERY -r 4
 RGBGFXFLAGS    = -Weverything
 
 ifeq ($(filter faithful,$(MAKECMDGOALS)),faithful)

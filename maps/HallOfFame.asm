@@ -62,7 +62,13 @@ HallOfFameEnterScene:
 	writetext .GoldTrophySentText
 	waitbutton
 .NoTrophy
+	checkevent EVENT_USED_CHEAT_CLUB
+	iffalsefwd .NotACheater
+	writetext .LanceTextCheater
+	sjumpfwd .KeepGoing
+.NotACheater
 	writetext .LanceText2
+.KeepGoing
 	waitbutton
 	closetext
 	turnobject HALLOFFAME_LANCE, UP
@@ -179,4 +185,45 @@ HallOfFameEnterScene:
 .SilverTrophySentText:
 	text "Silver Trophy"
 	line "was sent home."
+	done
+
+.LanceTextCheater:
+	text "Here today, we"
+	line "witnessed the rise"
+
+	para "of a new League"
+	line "Champion--a"
+
+	para "trainer who feels"
+	line "compassion for,"
+
+	para "and trust toward,"
+	line "all #mon."
+
+	para "A trainer who"
+	line "succeeded through"
+
+	para "perseverance and"
+	line "determination."
+
+	para "A trainer who"
+	line "just had to have"
+	
+	para "that extra edge,"
+	line "you cheater!"
+	
+	para "The new League"
+	line "Champion who has"
+
+	para "all the makings"
+	line "of greatness,"
+	
+	para "even though you"
+	line "didn't play fair."
+
+	para "<PLAYER>, allow me"
+	line "to register you"
+
+	para "and your partners"
+	line "as Champions!"
 	done
