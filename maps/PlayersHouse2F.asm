@@ -184,6 +184,8 @@ endr
 	setevent EVENT_BATTLE_TOWER_OPEN
 	clearevent EVENT_BATTLE_TOWER_CLOSED
 	setevent EVENT_ENABLE_DIPLOMA_PRINTING
+	setevent EVENT_GOT_EEVEE_FROM_LALA
+	setevent EVENT_LISTENED_TO_LALA_INTRO
 ;	clearevent EVENT_AZALEA_TOWN_SLOWPOKES ; enables random overcast weather
 	; fly anywhere
 	setflag ENGINE_FLYPOINT_NEW_BARK
@@ -247,11 +249,10 @@ endr
 	loadmem wPartyMon2PP+3, 10
 	loadmem wPartyMon2PokerusStatus, 1
 	; variant form test
-	givepoke TYPHLOSION, HISUIAN_FORM, 50
-	loadmem wPartyMon3Shiny, SHINY_MASK
-	loadmem wPartyMon3PokerusStatus, POKERUS_CURED
+	givepoke PIKACHU, PIKACHU_PARTNER_FORM, 50
+	loadmem wPartyMon3Moves+0, MAGNITUDE
 	; ext species test
-	givepoke URSALUNA, URSALUNA_BLOODMOON_FORM, 50
+	givepoke EEVEE, EON_FORM, 99
 	givepoke DUDUNSPARCE, DUDUNSPARCE_THREE_SEGMENT_FORM, 50
 	; evolve during battle
 	givepoke PUPITAR, 54

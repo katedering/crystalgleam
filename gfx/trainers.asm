@@ -443,6 +443,13 @@ LawrencePic: INCBIN "gfx/trainers/lawrence.2bpp.lzp"
 SECTION "ReiPic", ROMX
 ReiPic: INCBIN "gfx/trainers/rei.2bpp.lzp"
 
+SECTION "BonusTrainerPics", ROMX
+KatePic: INCBIN "gfx/trainers/kate.2bpp.lzp"
+AshPic: INCBIN "gfx/trainers/ash.2bpp.lzp"
+TripPic: INCBIN "gfx/trainers/trip.2bpp.lzp"
+FedmaePic: INCBIN "gfx/trainers/fedmae.2bpp.lzp"
+RocketPic: INCBIN "gfx/trainers/rocket.2bpp.lzp"
+
 SECTION "OmastarFossilPic", ROMX
 OmastarFossilPic: INCBIN "gfx/trainers/omastar_fossil.2bpp.lzp"
 

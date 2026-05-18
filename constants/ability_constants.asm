@@ -162,4 +162,5 @@
 	const ARMOR_TAIL
 	const MINDS_EYE
 	const MEGA_SOL
+	const EON_FORCE
 DEF NUM_ABILITIES EQU const_value

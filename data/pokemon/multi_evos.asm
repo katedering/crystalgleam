@@ -1,4 +1,4 @@
-; Used for Lyra to describe multiple evolutions (see engine/phone/scripts/lyra.asm)
+; Used for Elm to describe multiple evolutions (see engine/phone/scripts/elm.asm)
 
 MACRO multi_evo
 ; mon, EVOLVE_* value
@@ -33,4 +33,14 @@ MultipleEvolutions:
 	multi_evo STANTLER
 	multi_evo DUNSPARCE, DUDUNSPARCE_TWO_SEGMENT_FORM, EVOLVE_DUNSPARCE
 	multi_evo DUNSPARCE, DUDUNSPARCE_THREE_SEGMENT_FORM, EVOLVE_DUNSPARCE
+	multi_evo EEVEE, EON_FORM, EVOLVE_EON_FORM
+	multi_evo VAPOREON, EON_FORM, EVOLVE_EON_FORM
+	multi_evo JOLTEON, EON_FORM, EVOLVE_EON_FORM
+	multi_evo FLAREON, EON_FORM, EVOLVE_EON_FORM
+	multi_evo ESPEON, EON_FORM, EVOLVE_EON_FORM
+	multi_evo UMBREON, EON_FORM, EVOLVE_EON_FORM
+	multi_evo LEAFEON, EON_FORM, EVOLVE_EON_FORM
+	multi_evo GLACEON, EON_FORM, EVOLVE_EON_FORM
+	multi_evo SYLVEON, EON_FORM, EVOLVE_EON_FORM
+	multi_evo EEVEEON
 	dw -1

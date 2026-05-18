@@ -262,10 +262,10 @@ endr
 	jr nz, .shiny_check
 
 	ld a, [wBattleType]
-	cp BATTLETYPE_NEVER_SHINY
-	jr z, .shiny
-	cp BATTLETYPE_GROTTO
+	cp BATTLETYPE_RED_GYARADOS
 	jr z, .not_shiny
+	cp BATTLETYPE_SHINY
+	jr z, .shiny
 
 .shiny_check
 	call Random

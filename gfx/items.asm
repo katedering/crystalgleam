@@ -826,6 +826,15 @@ ExpCandyXLIcon:: INCBIN "gfx/items/exp_candy_xl.2bpp.lzp"
 SECTION "LiftKeyIcon", ROMX
 LiftKeyIcon:: INCBIN "gfx/items/lift_key.2bpp.lzp"
 
+SECTION "EonStoneIcon", ROMX
+EonStoneIcon:: INCBIN "gfx/items/eon_stone.2bpp.lzp"
+
+SECTION "CheaterCardIcon", ROMX
+CheaterCardIcon:: INCBIN "gfx/items/cheater_card.2bpp.lzp"
+
+SECTION "OldKeyIcon", ROMX
+OldKeyIcon:: INCBIN "gfx/items/basement_key.2bpp.lzp"
+
 SECTION "PokedexIcon", ROMX
 PokedexItemIcon:: INCBIN "gfx/items/pokedex.2bpp.lzp"
 

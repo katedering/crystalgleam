@@ -293,6 +293,9 @@ KeyItemDescriptions:
 	dw HarshLureDesc
 	dw PotentLureDesc
 	dw MalignLureDesc
+	dw EonStoneDesc
+	dw CheaterCardDesc
+	dw OldKeyDesc
 	dw ShinyCharmDesc
 	dw OvalCharmDesc
 	dw CatchCharmDesc
@@ -1701,16 +1704,43 @@ WingCaseDesc:
 	next "each Wing."
 	done
 
+EonStoneDesc:
+	text "A curious item for"
+	next "a special Eevee."
+	done
+	
+CheaterCardDesc:
+	text "Allows access to"
+	next "the Cheater's Club."
+	done
+
+OldKeyDesc:
+	text "An old key for an"
+	next "old vehicle."
+	done
+	
 CandyJarDesc:
 	text "Holds up to 99 of"
 	next "each Exp.Candy."
 	done
 
 ExpCandyXSDesc:
+	text "A tiny candy that"
+	next "gives Exp.Points."
+	done
 ExpCandySDesc:
+	text "A small candy that"
+	next "gives Exp.Points."
+	done
 ExpCandyMDesc:
-ExpCandyLDesc:
-ExpCandyXLDesc:
 	text "A candy that"
+	next "gives Exp.Points."
+	done
+ExpCandyLDesc:
+	text "A big candy that"
+	next "gives Exp.Points."
+	done
+ExpCandyXLDesc:
+	text "A giant candy that"
 	next "gives Exp.Points."
 	done

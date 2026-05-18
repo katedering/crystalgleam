@@ -132,10 +132,10 @@ AnimationExtraPointers:
 	dw GyaradosPlainAnimationExtra
 	dw LaprasAnimationExtra
 	dw DittoAnimationExtra
-	dw EeveeAnimationExtra
-	dw VaporeonAnimationExtra
-	dw JolteonAnimationExtra
-	dw FlareonAnimationExtra
+	dw EeveePlainAnimationExtra
+	dw VaporeonPlainAnimationExtra
+	dw JolteonPlainAnimationExtra
+	dw FlareonPlainAnimationExtra
 	dw PorygonAnimationExtra
 	dw OmanyteAnimationExtra
 	dw OmastarAnimationExtra
@@ -195,8 +195,8 @@ AnimationExtraPointers:
 	dw YanmaAnimationExtra
 	dw WooperPlainAnimationExtra
 	dw QuagsireAnimationExtra
-	dw EspeonAnimationExtra
-	dw UmbreonAnimationExtra
+	dw EspeonPlainAnimationExtra
+	dw UmbreonPlainAnimationExtra
 	dw MurkrowAnimationExtra
 	dw SlowkingPlainAnimationExtra
 	dw MisdreavusAnimationExtra
@@ -272,12 +272,12 @@ AnimationExtraPointers:
 	dw MagmortarAnimationExtra
 	dw TogekissAnimationExtra
 	dw YanmegaAnimationExtra
-	dw LeafeonAnimationExtra
-	dw GlaceonAnimationExtra
+	dw LeafeonPlainAnimationExtra
+	dw GlaceonPlainAnimationExtra
 	dw GliscorAnimationExtra
 	dw MamoswineAnimationExtra
 	dw PorygonZAnimationExtra
-	dw SylveonAnimationExtra
+	dw SylveonPlainAnimationExtra
 	dw PerrserkerAnimationExtra
 	dw CursolaAnimationExtra
 	dw SirfetchDAnimationExtra
@@ -291,6 +291,9 @@ AnimationExtraPointers:
 	dw FarigirafAnimationExtra
 	dw ClodsireAnimationExtra
 	dw AnnihilapeAnimationExtra
+	dw EeveeonAnimationExtra
+	dw MissingnoAnimationExtra
+	dw GorochuAnimationExtra
 	assert_table_length NUM_SPECIES
 
 	dw UnownBAnimationExtra
@@ -329,7 +332,6 @@ AnimationExtraPointers:
 
 	dw PikachuFlyAnimationExtra
 	dw PikachuSurfAnimationExtra
-	dw PikachuPikaAnimationExtra
 	dw PikachuChuchuAnimationExtra
 	dw PikachuSparkAnimationExtra
 
@@ -411,4 +413,16 @@ AnimationExtraPointers:
 
 	dw UrsalunaBloodmoonAnimationExtra
 
+	dw EeveeEonAnimationExtra
+	dw VaporeonEonAnimationExtra
+	dw JolteonEonAnimationExtra
+	dw FlareonEonAnimationExtra
+	dw EspeonEonAnimationExtra
+	dw UmbreonEonAnimationExtra
+	dw LeafeonEonAnimationExtra
+	dw GlaceonEonAnimationExtra
+	dw SylveonEonAnimationExtra
+	
+	dw PikachuPartnerAnimationExtra
+	dw RaichuPartnerAnimationExtra
 	assert_table_length NUM_UNIQUE_POKEMON

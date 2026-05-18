@@ -159,6 +159,7 @@ AbilityDescriptions:
 	dw ArmorTailDescription
 	dw MindsEyeDescription
 	dw MegaSolDescription
+	dw EonForceDescription
 	assert_table_length NUM_ABILITIES
 
 NoAbilityDescription:
@@ -938,4 +939,10 @@ MindsEyeDescription:
 MegaSolDescription:
 	text "Uses moves as if"
 	next "harsh sun is up."
+	done
+
+EonForceDescription:
+	text "Moves ignore type"
+	next "effectiveness."
+	done
 	done

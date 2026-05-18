@@ -175,4 +175,5 @@ AbilityFlags:
 	abilflag ARMOR_TAIL
 	abilflag MINDS_EYE, IGNORABLE
 	abilflag MEGA_SOL
+	abilflag EON_FORCE, NO_COPY, NO_TRACE, NO_SWAP, NO_SUPPRESS, NO_TRANSFORM
 	assert_table_length NUM_ABILITIES

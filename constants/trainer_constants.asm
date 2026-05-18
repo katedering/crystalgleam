@@ -372,6 +372,7 @@ DEF BETA EQU __trainer_class__
 	const JAIME ; custom pal
 	const BOONE
 	const ELEANOR
+	const KRISTI
 
 	trainerclass OFFICERM
 	const KEITH
@@ -435,6 +436,7 @@ DEF BETA EQU __trainer_class__
 	const FOOTE
 	const DAVE
 	const KOUTA
+	const HERB
 
 	trainerclass LASS
 	const DANA1
@@ -987,7 +989,7 @@ DEF BETA EQU __trainer_class__
 	const LOIS
 	const FRAN
 	const LOLA
-	const KATE
+	const KIMI
 	const IRENE
 	const KELLY
 	const JOYCE
@@ -1126,6 +1128,16 @@ DEF BETA EQU __trainer_class__
 	trainerclass LAWRENCE
 
 	trainerclass REI
+
+	trainerclass KATE
+	
+	trainerclass ASH
+	
+	trainerclass TRIP
+	
+	trainerclass FEDMAE
+	
+	trainerclass ROCKET
 
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1
 

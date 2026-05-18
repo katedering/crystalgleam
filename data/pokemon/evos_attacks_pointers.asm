@@ -28,7 +28,7 @@ EvosAttacksPointers::
 	dw FearowEvosAttacks
 	dw EkansEvosAttacks
 	dw ArbokEvosAttacks
-	dw PikachuEvosAttacks
+	dw PikachuPlainEvosAttacks
 	dw RaichuPlainEvosAttacks
 	dw SandshrewPlainEvosAttacks
 	dw SandslashPlainEvosAttacks
@@ -136,10 +136,10 @@ EvosAttacksPointers::
 	dw GyaradosEvosAttacks
 	dw LaprasEvosAttacks
 	dw DittoEvosAttacks
-	dw EeveeEvosAttacks
-	dw VaporeonEvosAttacks
-	dw JolteonEvosAttacks
-	dw FlareonEvosAttacks
+	dw EeveePlainEvosAttacks
+	dw VaporeonPlainEvosAttacks
+	dw JolteonPlainEvosAttacks
+	dw FlareonPlainEvosAttacks
 	dw PorygonEvosAttacks
 	dw OmanyteEvosAttacks
 	dw OmastarEvosAttacks
@@ -199,8 +199,8 @@ EvosAttacksPointers::
 	dw YanmaEvosAttacks
 	dw WooperPlainEvosAttacks
 	dw QuagsireEvosAttacks
-	dw EspeonEvosAttacks
-	dw UmbreonEvosAttacks
+	dw EspeonPlainEvosAttacks
+	dw UmbreonPlainEvosAttacks
 	dw MurkrowEvosAttacks
 	dw SlowkingPlainEvosAttacks
 	dw MisdreavusEvosAttacks
@@ -276,12 +276,12 @@ EvosAttacksPointers::
 	dw MagmortarEvosAttacks
 	dw TogekissEvosAttacks
 	dw YanmegaEvosAttacks
-	dw LeafeonEvosAttacks
-	dw GlaceonEvosAttacks
+	dw LeafeonPlainEvosAttacks
+	dw GlaceonPlainEvosAttacks
 	dw GliscorEvosAttacks
 	dw MamoswineEvosAttacks
 	dw PorygonZEvosAttacks
-	dw SylveonEvosAttacks
+	dw SylveonPlainEvosAttacks
 	dw PerrserkerEvosAttacks
 	dw CursolaEvosAttacks
 	dw SirfetchDEvosAttacks
@@ -295,6 +295,9 @@ EvosAttacksPointers::
 	dw FarigirafEvosAttacks
 	dw ClodsireEvosAttacks
 	dw AnnihilapeEvosAttacks
+	dw EeveeonEvosAttacks
+	dw MissingnoEvosAttacks
+	dw GorochuEvosAttacks
 	assert_table_length NUM_SPECIES
 
 	dw GyaradosEvosAttacks
@@ -350,5 +353,17 @@ EvosAttacksPointers::
 	dw TaurosPaldeanWaterEvosAttacks
 
 	dw UrsalunaBloodmoonEvosAttacks
-
+	
+	dw EeveeEonEvosAttacks
+	dw VaporeonEonEvosAttacks
+	dw JolteonEonEvosAttacks
+	dw FlareonEonEvosAttacks
+	dw EspeonEonEvosAttacks
+	dw UmbreonEonEvosAttacks
+	dw LeafeonEonEvosAttacks
+	dw GlaceonEonEvosAttacks
+	dw SylveonEonEvosAttacks
+	
+	dw PikachuPartnerEvosAttacks
+	dw RaichuPartnerEvosAttacks
 	assert_table_length NUM_EXT_POKEMON

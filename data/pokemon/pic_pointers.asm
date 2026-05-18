@@ -136,10 +136,10 @@ PokemonPicPointers::
 	pics GyaradosPlain
 	pics Lapras
 	pics Ditto
-	pics Eevee
-	pics Vaporeon
-	pics Jolteon
-	pics Flareon
+	pics EeveePlain
+	pics VaporeonPlain
+	pics JolteonPlain
+	pics FlareonPlain
 	pics Porygon
 	pics Omanyte
 	pics Omastar
@@ -199,8 +199,8 @@ PokemonPicPointers::
 	pics Yanma
 	pics WooperPlain
 	pics Quagsire
-	pics Espeon
-	pics Umbreon
+	pics EspeonPlain
+	pics UmbreonPlain
 	pics Murkrow
 	pics SlowkingPlain
 	pics Misdreavus
@@ -276,12 +276,12 @@ PokemonPicPointers::
 	pics Magmortar
 	pics Togekiss
 	pics Yanmega
-	pics Leafeon
-	pics Glaceon
+	pics LeafeonPlain
+	pics GlaceonPlain
 	pics Gliscor
 	pics Mamoswine
 	pics PorygonZ
-	pics Sylveon
+	pics SylveonPlain
 	pics Perrserker
 	pics Cursola
 	pics SirfetchD
@@ -295,6 +295,9 @@ PokemonPicPointers::
 	pics Farigiraf
 	pics Clodsire
 	pics Annihilape
+	pics Eeveeon
+	pics Missingno
+	pics Gorochu
 	assert_table_length NUM_SPECIES
 
 	pics UnownB
@@ -333,7 +336,6 @@ PokemonPicPointers::
 
 	pics PikachuFly
 	pics PikachuSurf
-	pics PikachuPika
 	pics PikachuChuchu
 	pics PikachuSpark
 
@@ -414,5 +416,17 @@ PokemonPicPointers::
 	pics TaurosPaldeanWater
 
 	pics UrsalunaBloodmoon
-
+	
+	pics EeveeEon
+	pics VaporeonEon
+	pics JolteonEon
+	pics FlareonEon
+	pics EspeonEon
+	pics UmbreonEon
+	pics LeafeonEon
+	pics GlaceonEon
+	pics SylveonEon
+	
+	pics PikachuPartner
+	pics RaichuPartner
 	assert_table_length NUM_UNIQUE_POKEMON

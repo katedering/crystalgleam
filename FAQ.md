@@ -1,7 +1,7 @@
 
 # FAQ
 
-If you have a question about playing Polished Crystal, or think you've found a bug, please read this FAQ first.
+If you have a question about playing Crystal Gleam, or think you've found a bug, please read this FAQ first.
 
 > At the time, I was asking really obvious questions like: "So 'wireless' means you're getting rid of the wires, right?"
 >
@@ -50,12 +50,12 @@ It's identical to the one built by the [pokecrystal](https://github.com/pret/pok
 
 ### Which emulator should I use?
 
-Not every emulator is compatible with Polished Crystal. With the exception of the Virtual Console emulator, we do not offer any support if an emulator has a bug that isn't reproducible on official hardware. As such, we recommend the following emulators to limit compatibility issues:
+Not every emulator is compatible with Crystal Gleam. With the exception of the Virtual Console emulator, we do not offer any support if an emulator has a bug that isn't reproducible on official hardware. As such, we recommend the following emulators to limit compatibility issues:
 
 #### PC:
 * [mGBA](https://mgba.io/) - most popular emulator, no known incompatiblities, can also conveniently play GBA games
 * [SameBoy](https://sameboy.github.io/) - one of the most accurate emulators, also has an iOS release
-* [BGB](https://bgb.bircd.org/) - Polished Crystal developers use this emulator, more accurate than mGBA, powerful debugger
+* [BGB](https://bgb.bircd.org/) - Crystal Gleam developers use this emulator, more accurate than mGBA, powerful debugger
 
 #### Android:
 * [RetroArch](https://www.retroarch.com/) - use SameBoy, mGBA or Gambatte core, **do not use VBA-M core**
@@ -63,7 +63,7 @@ Not every emulator is compatible with Polished Crystal. With the exception of th
 #### iOS:
 * [SameBoy](https://sameboy.github.io/) - see PC section
 
-Conversely, the following emulators are known to have issues and **should not be used** to play Polished Crystal:
+Conversely, the following emulators are known to have issues and **should not be used** to play Crystal Gleam:
 
 #### PC:
 * VBA - this emulator has not been updated since 2004, do not ever use
@@ -73,21 +73,21 @@ Conversely, the following emulators are known to have issues and **should not be
 * Delta - while we have had a higher incidence rate of issues with Delta, there is presently no evidence that the emulator itself has any issues. We do still strongly recommend using SameBoy on iOS, as we still are awaiting evidence of any unusual issues with this emulator and save states
 
 #### Android:
-* MyOldBoy - while most of the game is playable, it is incompatible with the Real-Time Clock in Polished Crystal.
-* Nostalgia.GBC - the save file structure that this emulator produces is incompatible with Polished Crystal's save patcher, which means that updating your save to a newer version in the future will be impossible.
+* MyOldBoy - while most of the game is playable, it is incompatible with the Real-Time Clock in Crystal Gleam.
+* Nostalgia.GBC - the save file structure that this emulator produces is incompatible with Crystal Gleam's save patcher, which means that updating your save to a newer version in the future will be impossible.
 * JohnGBC - is confirmed to cause rendering issues and possibly more.
 
 #### Other:
 * Goomba Color - used to play GB/C games from a GBA flashcart, this emulator can't even run vanilla Crystal
 
-If you have a preferred emulator that isn't listed above, using it should be fine. Most modern emulators can indeed run Polished Crystal just fine. Be aware, though, that if you're consistently having an issue that isn't reproduced on either official hardware or the most accurate emulators, you will not be provided any support.
+If you have a preferred emulator that isn't listed above, using it should be fine. Most modern emulators can indeed run Crystal Gleam just fine. Be aware, though, that if you're consistently having an issue that isn't reproduced on either official hardware or the most accurate emulators, you will not be provided any support.
 
 
 ### Are there cheat codes?
 
-Cheat codes are *not* officially supported: new updates may change or break old codes, which can lead to irreversible save corruption. There is instead [**Polished Editor**](https://www.polishededitor.vercel.app/), an **unofficial** online save editor for *Pokémon Polished Crystal*, created and maintained by [Rev3lation (@rev3lation)](https://github.com/KohKaiSern).
+Cheat codes are *not* officially supported: new updates may change or break old codes, which can lead to irreversible save corruption. There is instead [**Polished Editor**](https://www.polishededitor.vercel.app/), an **unofficial** online save editor for *Pokémon Crystal Gleam*, created and maintained by [Rev3lation (@rev3lation)](https://github.com/KohKaiSern).
 
-If you decide to use cheat codes anyway, note that cheat codes are easily misused - as such, **please disable cheats before complaining that there's a bug in the game, and don't ask for pre-made cheat codes**. Should you wish to create your own cheats, you may refer to the .sym files. The .sym files are created when you build Polished Crystal. They list the memory address of every label in the source code. These can be useful for [discovering GameShark cheat codes](https://github.com/pret/pokecrystal/wiki/Discovering-GameShark-cheat-codes). You can compare the addresses for Polished Crystal with the same labels for [pokecrystal](https://github.com/pret/pokecrystal/tree/symbols) to find the equivalents of old Crystal cheats.
+If you decide to use cheat codes anyway, note that cheat codes are easily misused - as such, **please disable cheats before complaining that there's a bug in the game, and don't ask for pre-made cheat codes**. Should you wish to create your own cheats, you may refer to the .sym files. The .sym files are created when you build Crystal Gleam. They list the memory address of every label in the source code. These can be useful for [discovering GameShark cheat codes](https://github.com/pret/pokecrystal/wiki/Discovering-GameShark-cheat-codes). You can compare the addresses for Crystal Gleam with the same labels for [pokecrystal](https://github.com/pret/pokecrystal/tree/symbols) to find the equivalents of old Crystal cheats.
 
 
 ### Is there documentation for all the {Pokémon, items, moves, etc}?
@@ -96,7 +96,7 @@ If you decide to use cheat codes anyway, note that cheat codes are easily misuse
 Make good use of the in-game features! The updated Pokédex has a lot more information, including base stats, abilities, detailed wild locations etc. In addition, call Professor Elm to find out how your Pokémon evolves, and call Lyra to find out when your Pokémon learns their next move.
 
 Outside of the game, there exists a [wiki](https://github.com/Rangi42/polishedcrystal/wiki) that is provided with various info.
-Alternatively, you may consider [**PolishedDex**](https://www.polisheddex.app/), an **unofficial** online companion site for *Pokémon Polished Crystal*, created and maintained by [Cammy (@caomicc)](https://github.com/caomicc).  
+Alternatively, you may consider [**PolishedDex**](https://www.polisheddex.app/), an **unofficial** online companion site for *Pokémon Crystal Gleam*, created and maintained by [Cammy (@caomicc)](https://github.com/caomicc).  
 It provides a slew of searchable references, such as the Pokédex, move list, items, locations, abilities, wild encounters, special events and trainers, along with tools like a team builder, headbutt calculator, catch rate calculator and more.
 
 Note that the in-game reference is typically the most accurate, and online resources may not always reflect the game accurately. For the most accurate reference, the game's [data files](data/) do a fairly good job of listing things you'll want to know. Some highlights:
@@ -130,7 +130,7 @@ Press Down+B at the title screen (the screen of the running Suicune) to reset th
 
 Having a built-in Nuzlocke Mode led to assumptions that the game catered specifically to the Nuzlocke community, and was balanced accordingly. The problem is that this led to a lot of people complaining that we didn't, for example, offer a built-in level cap or infinite Rare Candies. In the end, we chose to remove the Nuzlocke Mode option to make it clear that, while we have nothing against people doing self-imposed challenges, we have no plans to specifically design the game around them.
 
-Polished Crystal also has no support for in-game level caps, popular in Nuzlockes and other challenge runs. If you'd like to set a challenge for yourself by using them, see [this Wiki page](https://github.com/Rangi42/polishedcrystal/wiki/Nuzlocke#list-of-highest-levels).
+Crystal Gleam also has no support for in-game level caps, popular in Nuzlockes and other challenge runs. If you'd like to set a challenge for yourself by using them, see [this Wiki page](https://github.com/Rangi42/polishedcrystal/wiki/Nuzlocke#list-of-highest-levels).
 
 
 ### I don't recognize this move, what is it?
