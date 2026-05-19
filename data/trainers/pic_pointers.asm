@@ -149,6 +149,7 @@ TrainerPicPointers::
 	dba ImakuniPic
 	dba LawrencePic
 	dba ReiPic
+	dba FirebreatherAshesPic
 	dba KatePic
 	dba AshPic
 	dba TripPic

@@ -112,6 +112,7 @@ FinalText_SinglePhrases:
 	dw ImakuniFinalPkmnText
 	dw LawrenceFinalPkmnText
 	dw ReiFinalPkmnText
+	dw NULL ; Firebreather ashes
 	dw KateFinalPkmnText
 	dw AshFinalPkmnText
 	dw TripFinalPkmnText

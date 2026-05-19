@@ -148,6 +148,7 @@ TrainerClassNames::
 	li "Student"          ; IMAKUNI
 	li "Collector"        ; LAWRENCE
 	li "Shrine"           ; REI
+	li "Firebreather"     ; FIREBREATHER_ASHES
 	li "<PK><MN> Expert"  ; KATE
 	li "<PK><MN> Trainer" ; ASH
 	li "<PK><MN> Master"  ; TRIP

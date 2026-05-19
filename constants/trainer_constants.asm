@@ -1130,6 +1130,8 @@ DEF BETA EQU __trainer_class__
 
 	trainerclass REI
 
+	trainerclass FIREBREATHER_ASHES
+
 	trainerclass KATE
 	
 	trainerclass ASH
@@ -1178,9 +1180,6 @@ ENDM
 	trainerpal GAKU
 	trainerpal MASA
 	trainerpal KOJI
-
-; firebreather dick (white ashes)
-	trainerpal DICK_ASHES
 
 ; dark-skinned or tanned trainers
 	trainerpal DARK_CAMPER

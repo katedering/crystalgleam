@@ -151,6 +151,7 @@ TrainerGroups:
 	dba ImakuniGroup
 	dba LawrenceGroup
 	dba ReiGroup
+	dba FirebreatherGroup
 	dba KateGroup
 	dba AshGroup
 	dba TripGroup

@@ -443,6 +443,9 @@ LawrencePic: INCBIN "gfx/trainers/lawrence.2bpp.lzp"
 SECTION "ReiPic", ROMX
 ReiPic: INCBIN "gfx/trainers/rei.2bpp.lzp"
 
+SECTION "FirebreatherAshesPic", ROMX
+FirebreatherAshesPic: INCBIN "gfx/trainers/firebreather_ashes.2bpp.lzp"
+
 SECTION "BonusTrainerPics", ROMX
 KatePic: INCBIN "gfx/trainers/kate.2bpp.lzp"
 AshPic: INCBIN "gfx/trainers/ash.2bpp.lzp"
