@@ -3,6 +3,7 @@
 This is a custom fork of [Pokémon Polished Crystal](https://github.com/Rangi42/polishedcrystal).
 
 # Original README.md follows
+(edited with some links changed to Gleam)
 
 My goal is to create what the title says: an improved, polished version of Pokémon Crystal. It fixes bugs, takes into account the official game changes since 2001, and adds some new ideas of my own. Many features restore what was removed from R/B/Y, or original to HG/SS.
 
@@ -16,13 +17,13 @@ I've had vague plans to make a Pokémon game for years. I'm very impressed by th
 
 The **current official release** is **v3.2.3** (the “Polished Crystal” release). It's fully playable from start to finish and includes major overhauls to gameplay, mechanics, and quality of life. A more detailed changelog is forthcoming, but you can find the major highlights below.
 
-- **[Download v3.2.3 here](https://github.com/Rangi42/polishedcrystal/releases/tag/v3.2.3)**
-
-The previous official version was [v3.1.1](https://github.com/Rangi42/polishedcrystal/releases/tag/v3.1.1) (February 1, 2025).
+- **[[Download v3.2.3c here]](https://github.com/katedering/crystalgleam/releases/tag/3.2.3c)**
 
 *If you have any questions about playing or patching, [read the FAQ](FAQ.md)!*
 
-## What’s New in v3.2.3
+## What’s New in v3.2.3c
+
+[Crystal Gleam Changelog](https://github.com/katedering/crystalgleam/blob/master/CRYSTAL%20GLEAM%20CHANGELOG.md)
 
 Below is a brief summary of the major changes and additions. A more detailed changelog will be released soon.
 
