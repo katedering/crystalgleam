@@ -2481,5 +2481,5 @@
 	const EVENT_MISSINGNO
 	const EVENT_POKEMON_MANSION_B1F_OLD_KEY
 
-	const_next $8ff
+	const_next $937
 DEF NUM_EVENTS EQU const_value ; 2303

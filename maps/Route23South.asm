@@ -55,7 +55,7 @@ Route23SouthZephyrBadgeTriggerScript:
 	writetext Route23OfficerNeedBadgeText
 	waitbutton
 	checkflag ENGINE_ZEPHYRBADGE
-	iffalsefwd Route23OfficerNoBadgeScript
+	iffalsefwd Route23OfficerNoBadgeScript2
 	checkscene
 	ifgreater $0, Route23OfficerHaveBadgeScript
 	setscene SCENE_ROUTE23SOUTH_BADGE_CHECK_1
@@ -73,7 +73,7 @@ Route23SouthHiveBadgeTriggerScript:
 	writetext Route23OfficerNeedBadgeText
 	waitbutton
 	checkflag ENGINE_HIVEBADGE
-	iffalsefwd Route23OfficerNoBadgeScript
+	iffalsefwd Route23OfficerNoBadgeScript2
 	checkscene
 	ifgreater $1, Route23OfficerHaveBadgeScript
 	setscene SCENE_ROUTE23SOUTH_BADGE_CHECK_2
@@ -91,7 +91,7 @@ Route23SouthPlainBadgeTriggerScript:
 	writetext Route23OfficerNeedBadgeText
 	waitbutton
 	checkflag ENGINE_PLAINBADGE
-	iffalsefwd Route23OfficerNoBadgeScript
+	iffalsefwd Route23OfficerNoBadgeScript2
 	checkscene
 	ifgreater $2, Route23OfficerHaveBadgeScript
 	setscene SCENE_ROUTE23SOUTH_BADGE_CHECK_3
@@ -109,7 +109,7 @@ Route23SouthFogBadgeTriggerScript:
 	writetext Route23OfficerNeedBadgeText
 	waitbutton
 	checkflag ENGINE_FOGBADGE
-	iffalsefwd Route23OfficerNoBadgeScript
+	iffalsefwd Route23OfficerNoBadgeScript2
 	checkscene
 	ifgreater $3, Route23OfficerHaveBadgeScript
 	setscene SCENE_ROUTE23SOUTH_BADGE_CHECK_4
@@ -127,7 +127,7 @@ Route23SouthStormBadgeTriggerScript:
 	writetext Route23OfficerNeedBadgeText
 	waitbutton
 	checkflag ENGINE_STORMBADGE
-	iffalsefwd Route23OfficerNoBadgeScript
+	iffalsefwd Route23OfficerNoBadgeScript2
 	checkscene
 	ifgreater $4, Route23OfficerHaveBadgeScript
 	setscene SCENE_ROUTE23SOUTH_NOOP
@@ -135,3 +135,21 @@ Route23SouthStormBadgeTriggerScript:
 
 .StormBadgeText:
 	db "Storm Badge@"
+
+Route23OfficerNoBadgeScript2:
+	writetext .NoBadgeText
+	waitbutton
+	closetext
+	applyonemovement PLAYER, step_down
+	end
+
+.NoBadgeText:
+	text "You don't have the"
+	line ""
+	text_ram wStringBuffer3
+	text " yet!"
+
+	para "You have to have"
+	line "it to get to the"
+	cont "#mon League!"
+	done
