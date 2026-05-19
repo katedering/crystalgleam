@@ -102,18 +102,9 @@ InitialOptionDescriptions:
 	prompt
 
 .RTC:
-	text "The Real-Time"
-	line "Clock does not"
-	cont "work in Gleam."
-
-	para "Please leave the"
-	line "setting on 'No'"
-	cont "so that the game"
-
 	assert NO_RTC_SPEEDUP == 6
-	cont "will properly"
-	cont "make each in-game"
-	cont "day last 4 hours."
+	text "Real-Time Clock"
+	line "is disabled."
 	prompt
 
 .PerfectIVs:

@@ -186,7 +186,8 @@ endr
 	setevent EVENT_ENABLE_DIPLOMA_PRINTING
 	setevent EVENT_GOT_EEVEE_FROM_LALA
 	setevent EVENT_LISTENED_TO_LALA_INTRO
-;	clearevent EVENT_AZALEA_TOWN_SLOWPOKES ; enables random overcast weather
+	clearevent EVENT_VIOLET_OUTSKIRTS_BLOCKED
+	clearevent EVENT_AZALEA_TOWN_SLOWPOKES ; enables random overcast weather
 	; fly anywhere
 	setflag ENGINE_FLYPOINT_NEW_BARK
 	setflag ENGINE_FLYPOINT_CHERRYGROVE

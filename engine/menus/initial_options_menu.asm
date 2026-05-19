@@ -291,21 +291,21 @@ InitialOptions_RTC:
 	ld hl, wInitialOptions2
 	ldh a, [hJoyPressed]
 	and PAD_LEFT | PAD_RIGHT
-	jr nz, .Toggle
+;	jr nz, .Toggle
 	bit RTC_OPT, [hl]
 	jr z, .SetNo
-	jr .SetYes
-.Toggle:
-	bit RTC_OPT, [hl]
-	jr z, .SetYes
+;	jr .SetYes
+;.Toggle:
+;	bit RTC_OPT, [hl]
+;	jr z, .SetYes
 .SetNo:
 	res RTC_OPT, [hl]
-	ld de, NoString
+	ld de, DisabledString
 	jmp OptionsShared_PlaceStringAtValueCoord
-.SetYes:
-	set RTC_OPT, [hl]
-	ld de, YesString
-	jmp OptionsShared_PlaceStringAtValueCoord
+;.SetYes:
+;	set RTC_OPT, [hl]
+;	ld de, YesString
+;	jmp OptionsShared_PlaceStringAtValueCoord
 
 InitialOptions_PerfectIVs:
 	ld hl, wInitialOptions

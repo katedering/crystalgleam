@@ -1,8 +1,8 @@
 if !DEF(MONOCHROME)
-; blue
+; gleam
 	RGB 31, 31, 31
-	RGB 09, 30, 31
-	RGB 09, 25, 29
+	RGB 27, 28, 30
+	RGB 25, 20, 31
 	RGB 00, 00, 00
 else
 	MONOCHROME_RGB_FOUR

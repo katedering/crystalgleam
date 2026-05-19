@@ -56,8 +56,11 @@ StdScripts::
 	dw TreeGrottoScript
 	dw CaveGrottoScript
 	dw KantoPostGymEventsScript
+	dw CheatClubScript
 
 PokeCenterNurseScript:
+	checkkeyitem CHEATER_CARD
+	iftruefwd .cheat_center
 	opentext
 	checkevent EVENT_NURSE_SAW_TRAINER_STAR
 	iftruefwd .star_center
@@ -203,7 +206,69 @@ PokeCenterNurseScript:
 .done
 	turnobject PLAYER, DOWN
 	end
+	
+.cheat_center
+	opentext
+	farwritetext NurseCheatText
+	promptbutton
+	pause 10
+	turnobject LAST_TALKED, LEFT
+	pause 5
+	special HealParty
+	special SaveMusic
+	playmusic MUSIC_NONE
+	setval 0 ; Machine is at a Pokemon Center
+	special HealMachineAnim
+	pause 15
+	special RestoreMusic
+	turnobject LAST_TALKED, DOWN
+	pause 10
 
+	checkphonecall ; elm already called about pokerus
+	iftruefwd .done2
+	checkflag ENGINE_CAUGHT_POKERUS ; nurse already talked about pokerus
+	iftruefwd .done2
+	special SpecialCheckPokerus
+	iftruefwd .pokeruscheat
+
+.done2
+	farwritetext NurseCheatDoneText
+	pause 10
+	farwritetext NurseCheatGoodbyeText
+	turnobject LAST_TALKED, UP
+	pause 10
+	turnobject LAST_TALKED, DOWN
+	pause 10
+	waitbutton
+	closetext
+	turnobject PLAYER, DOWN
+	end
+
+.pokeruscheat
+	farwritetext NurseCheatPokerusText
+	waitbutton
+	closetext
+	setflag ENGINE_CAUGHT_POKERUS
+	specialphonecall SPECIALCALL_POKERUS
+	turnobject PLAYER, DOWN
+	end
+
+.fast_center
+	special HealParty
+	playsound SFX_FLASH
+	pause 10
+	checkphonecall ; elm already called about pokerus
+	iftruefwd .done3
+	checkflag ENGINE_CAUGHT_POKERUS ; nurse already talked about pokerus
+	iftruefwd .done3
+	special SpecialCheckPokerus
+	iffalsefwd .done3
+	setflag ENGINE_CAUGHT_POKERUS
+	specialphonecall SPECIALCALL_POKERUS
+.done3
+	turnobject PLAYER, DOWN
+	end
+	
 DifficultBookshelfScript:
 	farjumptext DifficultBookshelfText
 
@@ -1601,15 +1666,16 @@ CoinVendor_IntroScript:
 
 .MenuDataHeader:
 	db MENU_BACKUP_TILES
-	menu_coords 0, 4, 15, 11
+	menu_coords 0, 5, 16, 11
 	dw .MenuData2
 	db 1 ; default option
 
 .MenuData2:
 	db $80 ; flags
 	db 3 ; items
-	db " 50 :  ¥1000@"
-	db "500 : ¥10000@"
+	db " 100 :  ¥1000@"
+	db "1000 : ¥10000@"
+	db "5000 : ¥50000@"
 	db "Cancel@"
 
 HappinessCheckScript:
@@ -1800,3 +1866,110 @@ KantoPostGymEventsScript:
 .LyrasEgg:
 	specialphonecall SPECIALCALL_LYRASEGG
 	end
+
+CheatClubScript:
+	faceplayer
+	opentext
+	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
+	iffalsefwd .NotYet
+	checkkeyitem CHEATER_CARD
+	iftruefwd .Cheater
+	farwritetext AreYouACheaterText
+	yesorno
+	iffalsefwd .NotCheater
+	farwritetext YouAreACheaterText
+	waitbutton
+	waitsfx
+	verbosegivekeyitem CHEATER_CARD
+	sjumpfwd .Cheater
+
+.NotYet
+	farwritetext CheatClubClosedText
+	waitbutton
+	closetext
+	end
+
+.NotCheater:
+	farwritetext YouAreNotACheaterText
+	waitbutton
+	closetext
+	end
+	
+.Cheater:
+	farwritetext CheatClubText1
+	promptbutton
+.CheatMenu:
+	farwritetext CheatClubText2
+	loadmenu .CheatMenuData
+	verticalmenu
+	closewindow
+	ifequalfwd $1, .CatchPack
+	ifequalfwd $2, .TrainPack
+	ifequalfwd $3, .MoneyPack
+	sjumpfwd .CheatClubCancel
+
+.CatchPack:
+	setevent EVENT_USED_CHEAT_CLUB
+	giveitem MASTER_BALL, 99
+	giveitem CHERISH_BALL, 99
+	giveitem SWEET_HONEY, 99
+	waitsfx
+	playsound SFX_TRANSACTION
+	farwritetext CheatClubCatchPackText
+	waitbutton
+	sjump .CheatMenu
+
+.TrainPack:
+	setevent EVENT_USED_CHEAT_CLUB
+	giveitem RARE_CANDY, 99
+	giveitem HP_UP, 99
+	giveitem PROTEIN, 99
+	giveitem IRON, 99
+	giveitem CALCIUM, 99
+	giveitem ZINC, 99
+	giveitem CARBOS, 99
+	giveitem PP_MAX, 99
+	giveitem ABILITYPATCH, 99
+	giveitem ABILITY_CAP, 99
+	giveitem SILVER_LEAF, 99
+	giveitem GOLD_LEAF, 99
+	giveitem MINT_LEAF, 99
+	giveitem BOTTLE_CAP, 99
+	giveitem FULL_RESTORE, 99
+	giveitem MAX_REVIVE, 99
+	giveitem MAX_ELIXIR, 99
+	waitsfx
+	playsound SFX_TRANSACTION
+	farwritetext CheatClubTrainPackText
+	waitbutton
+	sjump .CheatMenu
+
+.MoneyPack:
+	setevent EVENT_USED_CHEAT_CLUB
+	giveitem BIG_NUGGET, 99
+	giveitem BIG_NUGGET, 99
+	giveitem BIG_NUGGET, 99
+	waitsfx
+	playsound SFX_TRANSACTION
+	farwritetext CheatClubMoneyPackText
+	waitbutton
+	sjump .CheatMenu
+
+.CheatClubCancel:
+	farwritetext CheatClubCancelText
+	waitendtext
+	
+.CheatMenuData:
+	db MENU_BACKUP_TILES
+	menu_coords 0, 2, 15, 11
+	dw .CheatMenuData2
+	db 4 ; default option
+
+.CheatMenuData2:
+	db $80 ; flags
+	db 4 ; items
+	db "Catching Pack@"
+	db "Training Pack@"
+	db "Shopping Pack@"
+	db "Cancel@"
+	

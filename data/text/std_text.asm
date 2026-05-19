@@ -534,6 +534,16 @@ YouAreACheaterText:
 	cont "#mon Center!"
 	done
 
+CheatClubClosedText:
+	text "I'm sorry, but"
+	line "this service is"
+	cont "unavailable at"
+	cont "this time."
+	
+	para "Please come back"
+	line "later!"
+	done
+
 YouAreNotACheaterText:
 	text "Oh? You don't want"
 	line "to join? Alright,"

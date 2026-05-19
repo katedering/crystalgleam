@@ -384,6 +384,8 @@ YesString::
 	db "Yes@"
 NoString::
 	db "No @"
+DisabledString::
+	db "Disabled@"
 
 NoYesMenuDataHeader::
 	db MENU_BACKUP_TILES

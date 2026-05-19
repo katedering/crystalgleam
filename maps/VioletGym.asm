@@ -52,6 +52,7 @@ VioletGymFalknerScript:
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_FALKNER
+	clearevent EVENT_VIOLET_OUTSKIRTS_BLOCKED
 	opentext
 	givebadge ZEPHYRBADGE, JOHTO_REGION
 .FightDone:
