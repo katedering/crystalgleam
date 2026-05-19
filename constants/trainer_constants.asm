@@ -516,6 +516,7 @@ DEF BETA EQU __trainer_class__
 	const JAY
 	const OLEG
 	const TALA
+	const CYD
 
 	trainerclass JUGGLER
 	const IRWIN1

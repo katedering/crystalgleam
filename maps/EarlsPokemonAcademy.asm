@@ -26,6 +26,7 @@ EarlsPokemonAcademy_MapScriptHeader:
 
 	object_const_def
 	const EARLSPOKEMONACADEMY_EARL
+	const EARLSPOKEMONACADEMY_GUARDGIRL
 
 AcademyEarl:
 	givekeyitem TYPE_CHART ; failsafe in case Violet City Earl is gone already in a save
