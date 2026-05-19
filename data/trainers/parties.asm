@@ -9449,6 +9449,14 @@ ReiGroup:
 		tr_moves NASTY_PLOT, FIRE_BLAST, ENERGY_BALL, SHADOW_BALL
 	end_trainer
 
+SECTION "FirebreatherGroup2", ROMX
+
+NullGroup:
+	def_trainer_class FIREBREATHER_ASHES
+	def_trainer 1, "Null"
+	tr_mon 1, CHARMANDER
+	end_trainer
+
 SECTION "FauxGroup", ROMX
 
 KateGroup:
