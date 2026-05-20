@@ -56,6 +56,8 @@ EcruteakPokeCenter1FBillScript:
 	opentext
 	checkevent EVENT_LISTENED_TO_BILL_INTRO
 	iftruefwd .heardintro
+	checkevent EVENT_LISTENED_TO_BILL_QUESTION
+	iftruefwd .heardquestion
 	writetext .IntroText
 	waitbutton
 	setevent EVENT_LISTENED_TO_BILL_INTRO
@@ -65,21 +67,59 @@ EcruteakPokeCenter1FBillScript:
 	iffalse_jumpopenedtext .NoText
 	writetext .YesText
 	promptbutton
+	setevent EVENT_LISTENED_TO_BILL_QUESTION
+.heardquestion
+	waitsfx
+	writetext .QuestionTextPikachu
+	yesorno
+	iftruefwd .WantPikachu
+	writetext .QuestionTextEevee
+	yesorno
+	iftruefwd .WantEevee
+	writetext .ThinkItOverText
+	waitbutton
+	closetext
+	end
+
+.WantPikachu:
 	waitsfx
 	readvar VAR_PARTYCOUNT
 	ifequalfwd PARTY_LENGTH, .NoRoom
-	givepoke EEVEE, PLAIN_FORM, 5, NO_ITEM, GREAT_BALL
+	givepoke PIKACHU, PIKACHU_PARTNER_FORM, 15, NO_ITEM, CHERISH_BALL
 	givepokemail .GiftEeveeMail
 	callasm .SetEeveeMailOT
-	setevent EVENT_GOT_EEVEE
+	setevent EVENT_GOT_PIKACHU_FROM_BILL
 	writetext .GoodbyeText
 	waitbutton
 	closetext
 	readvar VAR_FACING
 	turnobject PLAYER, DOWN
-	ifnotequal UP, .noleftstep
+	ifnotequal UP, .noleftstep1
 	applyonemovement ECRUTEAKPOKECENTER1F_BILL, step_left
-.noleftstep
+.noleftstep1
+	applymovement ECRUTEAKPOKECENTER1F_BILL, .LeaveMovement
+	playsound SFX_EXIT_BUILDING
+	disappear ECRUTEAKPOKECENTER1F_BILL
+	clearevent EVENT_NEVER_MET_BILL
+	waitsfx
+	end
+
+.WantEevee:
+	waitsfx
+	readvar VAR_PARTYCOUNT
+	ifequalfwd PARTY_LENGTH, .NoRoom
+	givepoke EEVEE, EON_FORM, 15, NO_ITEM, CHERISH_BALL
+	givepokemail .GiftEeveeMail
+	callasm .SetEeveeMailOT
+	setevent EVENT_GOT_EEVEE_FROM_BILL
+	writetext .GoodbyeText
+	waitbutton
+	closetext
+	readvar VAR_FACING
+	turnobject PLAYER, DOWN
+	ifnotequal UP, .noleftstep2
+	applyonemovement ECRUTEAKPOKECENTER1F_BILL, step_left
+.noleftstep2
 	applymovement ECRUTEAKPOKECENTER1F_BILL, .LeaveMovement
 	playsound SFX_EXIT_BUILDING
 	disappear ECRUTEAKPOKECENTER1F_BILL
@@ -111,21 +151,22 @@ EcruteakPokeCenter1FBillScript:
 	done
 
 .QuestionText:
-	text "Bill: This Eevee"
-	line "came over just"
+	text "Bill: So, just"
+	line "before the Time"
+	cont "Capsule shut down,"
+	
+	para "two interesting"
+	line "#mon popped"
+	cont "out of it…"
 
-	para "before the Time"
-	line "Capsule shut down."
-
-	para "Someone has to"
-	line "take care of it,"
-
-	para "but I don't like"
-	line "being outside."
+	para "Would you like to"
+	line "take care of one?"
+	
+	para "I don't have time"
+	line "to care for both."
 
 	para "Can I count on you"
-	line "to play with it,"
-	cont "<PLAYER>?"
+	line "to help, <PLAYER>?"
 	done
 
 .YesText:
@@ -135,19 +176,28 @@ EcruteakPokeCenter1FBillScript:
 	para "Way to go! You're"
 	line "the real deal!"
 
-	para "OK, I'm counting"
-	line "on you."
-
-	para "Take good care of"
-	line "it!"
+	para "OK, which one of"
+	line "them do you want?"
 	done
 
-.GoodbyeText:
-	text "Bill: Prof.Elm"
-	line "claims Eevee may"
+.NoText:
+	text "Oh… Now what to"
+	line "do?"
+	done
 
-	para "evolve in new and"
-	line "unknown ways."
+	
+.ThinkItOver:
+	writetext .ThinkItOverText
+	waitbutton
+	closetext
+	end
+
+.GoodbyeText:
+	text "Bill: That #mon"
+	line "seems different"
+
+	para "from usual #mon"
+	line "of it's species."
 
 	para "I have to hurry on"
 	line "back to Goldenrod"
@@ -159,17 +209,29 @@ EcruteakPokeCenter1FBillScript:
 	para "Buh-bye!"
 	done
 
-.NoText:
-	text "Oh… Now what to"
-	line "do?"
-	done
-
 .LeaveMovement:
 	step_down
 	step_down
 	step_down
 	step_down
 	step_end
+
+.QuestionTextPikachu:
+	text "Do you want"
+	line "Pikachu?"
+	done
+	
+.QuestionTextEevee:
+	text "Do you want"
+	line "Eevee?"
+	done
+	
+
+.ThinkItOverText:
+	text "If you need time"
+	line "to think, that's"
+	cont "OK!"
+	done
 
 .GiftEeveeMail:
 	db   EON_MAIL
@@ -194,7 +256,7 @@ EcruteakPokeCenter1FBillScript:
 	jmp CloseSRAM
 
 .EeveeMailOTID:
-	rawchar "Prof.Oak@@"
+	rawchar "Lala@@@@@@"
 	bigdw 00001
 .EeveeMailOTIDEnd
 

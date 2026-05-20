@@ -21,7 +21,9 @@ GoldenrodDeptStore2F_MapScriptHeader:
 	object_event  2,  6, SPRITE_GENTLEMAN, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, GoldenrodDeptStore2FGentlemanText, -1
 
 GoldenrodDeptStore2FClerk2Script:
-	checkevent EVENT_GOT_EEVEE
+	checkevent EVENT_GOT_EEVEE_FROM_BILL
+	iftruefwd .eevee
+	checkevent EVENT_GOT_PIKACHU_FROM_BILL
 	iftruefwd .eevee
 	pokemart MARTTYPE_STANDARD, MART_GOLDENROD_2F_2
 

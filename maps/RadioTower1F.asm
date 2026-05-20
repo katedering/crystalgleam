@@ -137,7 +137,7 @@ RadioTower1FRadioCardWomanScript:
 	iffalse_jumpopenedtext RadioTower1FRadioCardWomanNotTakingQuizText
 	writetext RadioTower1FRadioCardWomanQuestion1Text
 	yesorno
-	iffalsefwd .WrongAnswer
+	iftruefwd .WrongAnswer
 	playsound SFX_ELEVATOR_END
 	waitsfx
 	writetext RadioTower1FRadioCardWomanQuestion2Text
@@ -152,12 +152,12 @@ RadioTower1FRadioCardWomanScript:
 	waitsfx
 	writetext RadioTower1FRadioCardWomanQuestion4Text
 	yesorno
-	iftruefwd .WrongAnswer
+	iffalsefwd .WrongAnswer
 	playsound SFX_ELEVATOR_END
 	waitsfx
 	writetext RadioTower1FRadioCardWomanQuestion5Text
 	yesorno
-	iftruefwd .WrongAnswer
+	iffalsefwd .WrongAnswer
 	playsound SFX_ELEVATOR_END
 	waitsfx
 	writetext RadioTower1FRadioCardWomanYouWinText
@@ -362,36 +362,36 @@ RadioTower1FRadioCardWomanOfferQuizText:
 RadioTower1FRadioCardWomanQuestion1Text:
 	text "Question 1:"
 
-	para "Is there a #mon"
-	line "that appears only"
-	cont "in the morning?"
+	para "The #mon Unown"
+	line "appears in the"
+	cont "ruins of Alfred."
 	done
 
 RadioTower1FRadioCardWomanQuestion2Text:
 	text "Correct!"
 	line "Question 2:"
 
-	para "Nidorina can only"
-	line "be female. True?"
+	para "Berries regrow"
+	line "daily. True?"
 	done
 
 RadioTower1FRadioCardWomanQuestion3Text:
 	text "Bull's-eye!"
 	line "Question 3:"
 
-	para "Can Magikarp learn"
-	line "any moves via TM?"
+	para "Are there over 20"
+	line "#mon types?"
 	done
 
 RadioTower1FRadioCardWomanQuestion4Text:
 	text "So far so good!"
 	line "Question 4:"
 
-	para "Does Kurt, the"
-	line "# Ball creator,"
+	para "The Goldenrod Game"
+	line "Corner's Card"
 
-	para "use apricots as"
-	line "ingredients?"
+	para "Flip Game features"
+	line "Poliwag. True?"
 	done
 
 RadioTower1FRadioCardWomanQuestion5Text:
@@ -399,11 +399,11 @@ RadioTower1FRadioCardWomanQuestion5Text:
 	line "Here's the final"
 	cont "question:"
 
-	para "Do Goldenrod Game"
-	line "Corner's slots"
+	para "If you win the"
+	line "Lucky Number Show,"
 
-	para "have Charmander"
-	line "on their reels?"
+	para "you'll recieve a"
+	line "Master Ball. True?"
 	done
 
 RadioTower1FRadioCardWomanYouWinText:

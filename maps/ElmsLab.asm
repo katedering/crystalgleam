@@ -135,11 +135,6 @@ ElmsLab_AutoAideSpeech:
 ProfElmScript:
 	faceplayer
 	opentext
-	checkkeyitem EON_STONE
-	iftruefwd GotEonStone
-	checkevent EVENT_GOT_EEVEE_FROM_LALA
-	iftrue ElmEeveeEonScript
-GotEonStone:
 	checkevent EVENT_GOT_SS_TICKET_FROM_ELM
 	iftruefwd ElmCheckMasterBall
 	checkevent EVENT_BEAT_ELITE_FOUR
@@ -428,16 +423,6 @@ ElmGiveOddSouvenirScript:
 	checkevent EVENT_BATTLED_PROF_ELM
 	iffalsefwd ElmAlsoBattleScript
 	endtext
-	
-ElmEeveeEonScript:
-	writetext SpecialEeveeText
-	promptbutton
-	verbosegivekeyitem EON_STONE
-	setevent EVENT_GOT_EON_STONE_FROM_ELM
-	writetext EonStoneText
-	waitbutton
-	closetext
-	end
 
 ElmGiveMasterBallScript:
 	writetext ElmGiveMasterBallText1
@@ -1805,33 +1790,4 @@ ElmsLabTrashcanText:
 	text "The wrapper from"
 	line "the snack Prof.Elm"
 	cont "ate is in there…"
-	done
-
-SpecialEeveeText:
-	text "Lala called me"
-	line "earlier, and said"
-	cont "that she gave you"
-	cont "a #mon?"
-	
-	para "I have a stone"
-	line "here that was"
-	cont "given to me by"
-	cont "an old friend."
-	
-	para "It is supposed to"
-	line "have some link"
-	cont "with Eevee, but I"
-	cont "never could get it"
-	cont "to work."
-	
-	para "Perhaps Lala's"
-	line "Eevee will react"
-	cont "to it?"
-	done
-
-EonStoneText:
-	text "Try using this on"
-	line "that special Eevee"
-	cont "of yours, and see"
-	cont "what happens."
 	done

@@ -23,34 +23,49 @@ LalasLab1F_MapScriptHeader:
 LalaScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_EEVEE_FROM_LALA
-	iftruefwd .afterEevee
-	checkevent EVENT_LISTENED_TO_LALA_INTRO
-	iftruefwd .heardintro
-	writetext .IntroText
-	waitbutton
-	setevent EVENT_LISTENED_TO_LALA_INTRO
-.heardintro
-	writetext .QuestionText
-	yesorno
-	iffalse_jumpopenedtext .NoText
-	writetext .YesText
-	promptbutton
-	waitsfx
-	readvar VAR_PARTYCOUNT
-	ifequalfwd PARTY_LENGTH, .NoRoom
-	givepoke EEVEE, EON_FORM, 5, EVERSTONE, LUXURY_BALL
-	setevent EVENT_GOT_EEVEE_FROM_LALA
-	writetext .GoodbyeText
-	waitbutton
-	closetext
-	end
-
-.afterEevee:
+	checkevent EVENT_GOT_EON_STONE_FROM_LALA
+	iftruefwd .done
+	checkevent EVENT_GOT_EEVEE_FROM_BILL
+	iftruefwd .GotEevee
 	writetext .LalaText
 	waitbutton
 	closetext
 	end
+
+.GotEevee:
+	setevent EVENT_GOT_EON_STONE_FROM_LALA
+	writetext .LalaEonStoneText
+	promptbutton
+	verbosegivekeyitem EON_STONE
+	writetext .LalaEonStoneText2
+	promptbutton
+.done:
+	writetext .LalaText
+	waitbutton
+	closetext
+	end
+
+.LalaEonStoneText:
+	text "Bill told me that"
+	line "he gave you a"
+	
+	para "special Eevee?"
+	
+	para "I have a gift"
+	line "for you as well!"
+	done
+	
+.LalaEonStoneText2:
+	text "That Eon Stone"
+	line "supposedly has"
+	
+	para "some connection"
+	line "to your special"
+	cont "Eevee."
+	
+	para "But I'm not sure"
+	line "what, exactly."
+	done
 
 .LalaText:
 	text "You know, working"
@@ -64,80 +79,6 @@ LalaScript:
 	cont "fall into place!"
 	done
 
-.NoRoom:
-	jumpthisopenedtext
-
-	text "Oh, hold on! You"
-	line "can't carry any"
-	cont "more #mon."
-	done
-
-.IntroText:
-	text "Hi, I'm Lala."
-	line "What's your name?"
-
-	para "Oh, <PLAYER>?"
-	line "And you came all"
-	cont "way from Johto?"
-
-	para "Just to meet me?"
-
-	para "I'm honored. But"
-	line "I can't let you"
-	cont "visit without at"
-	cont "least giving you"
-	cont "a gift."
-	done
-
-.QuestionText:
-	text "Lala: I know!"
-
-	para "I have a very"
-	line "special Eevee"
-	cont "that needs a good"
-	cont "trainer."
-
-	para "I have to stay"
-	line "here and work,"
-
-	para "so would you be"
-	line "willing to take"
-	cont "it and be it's"
-	cont "partner?"
-
-	para "Will you do this"
-	line "for me,"
-	cont "<PLAYER>?"
-	done
-
-.YesText:
-	text "Lala: Oh, thank"
-	line "you so much,"
-	cont "<PLAYER>!"
-
-	para "You're amazing!"
-
-	para "I want you to"
-	line "take good care of"
-	cont "it for me, OK?"
-	done
-
-.GoodbyeText:
-	text "Lala: Prof.Elm"
-	line "mentioned some"
-	cont "things about Eevee"
-	cont "to me one day."
-	
-	para "Maybe you should"
-	line "pay him a visit."
-
-	para "Thanks again!"
-	done
-
-.NoText:
-	text "Oh… are you sure?"
-	done
-	
 LalasLab1FPlantPotText:
 	text "There's a plant"
 	line "pot in the way."

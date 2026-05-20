@@ -10,6 +10,7 @@ Marts:
 	dw Goldenrod3FMart
 	dw Goldenrod4FMart
 	dw Goldenrod5FTMMart
+	dw GoldenrodRoofMartBerry
 	dw GoldenrodHarborMart
 	dw UndergroundMart
 	dw EcruteakMart
@@ -32,6 +33,7 @@ Marts:
 	dw Celadon4FMart
 	dw Celadon5FMart1
 	dw Celadon5FMart2
+	dw Celadon6FMartBerry
 	dw SaffronMart
 	dw SilphCoMart
 	dw FuchsiaMart
@@ -158,13 +160,18 @@ Celadon5FMart2:
 
 Goldenrod4FMart:
 Celadon5FMart1:
-	db 12 ; # items
+	db 6 ; # items
 	db PROTEIN
 	db IRON
 	db CARBOS
 	db CALCIUM
 	db ZINC
 	db HP_UP
+	db -1
+	
+GoldenrodRoofMartBerry:
+Celadon6FMartBerry:
+	db 6 ; # items
 	db POMEG_BERRY
 	db KELPSY_BERRY
 	db QUALOT_BERRY
