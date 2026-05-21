@@ -397,11 +397,6 @@ CoinVendor_Buy1000CoinsText:
 	line "are 1000 coins."
 	done
 
-CoinVendor_Buy5000CoinsText:
-	text "Thank you! Here"
-	line "are 5000 coins."
-	done
-
 CoinVendor_NotEnoughMoneyText:
 	text "You don't have"
 	line "enough money."
@@ -566,9 +561,8 @@ CheatClubText2:
 	done
 
 CheatClubCatchPackText:
-	text "Enjoy catching"
-	line "'em all with this"
-	cont "pack!"
+	text "Catch 'em all"
+	line "with this pack!"
 	done
 
 CheatClubTrainPackText:

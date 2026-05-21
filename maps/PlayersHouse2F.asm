@@ -184,8 +184,6 @@ endr
 	setevent EVENT_BATTLE_TOWER_OPEN
 	clearevent EVENT_BATTLE_TOWER_CLOSED
 	setevent EVENT_ENABLE_DIPLOMA_PRINTING
-	setevent EVENT_GOT_EEVEE_FROM_LALA
-	setevent EVENT_LISTENED_TO_LALA_INTRO
 	clearevent EVENT_VIOLET_OUTSKIRTS_BLOCKED
 	clearevent EVENT_AZALEA_TOWN_SLOWPOKES ; enables random overcast weather
 	; fly anywhere

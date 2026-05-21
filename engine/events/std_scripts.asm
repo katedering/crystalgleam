@@ -1610,7 +1610,6 @@ CoinVendor_IntroScript:
 	closewindow
 	ifequalfwd $1, .Buy100
 	ifequalfwd $2, .Buy1000
-	ifequalfwd $3, .Buy5000
 	sjumpfwd .Cancel
 
 .Buy100:
@@ -1638,19 +1637,6 @@ CoinVendor_IntroScript:
 	farwritetext CoinVendor_Buy1000CoinsText
 	waitbutton
 	sjump .loop
-	
-.Buy5000
-	checkcoins 45000
-	ifequalfwd $0, .CoinCaseFull
-	checkmoney $0, 50000
-	ifequalfwd $2, .NotEnoughMoney
-	givecoins 5000
-	takemoney $0, 50000
-	waitsfx
-	playsound SFX_TRANSACTION
-	farwritetext CoinVendor_Buy5000CoinsText
-	waitbutton
-	sjump .loop
 
 .NotEnoughMoney:
 	farwritetext CoinVendor_NotEnoughMoneyText
@@ -1672,10 +1658,9 @@ CoinVendor_IntroScript:
 
 .MenuData2:
 	db $80 ; flags
-	db 3 ; items
+	db 2 ; items
 	db " 100 :  ¥1000@"
 	db "1000 : ¥10000@"
-	db "5000 : ¥50000@"
 	db "Cancel@"
 
 HappinessCheckScript:

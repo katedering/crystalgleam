@@ -487,8 +487,8 @@ RadioTower1FWhitney2Text:
 	line "did it!"
 
 	para "I thought the"
-	line "fourth answer"
-	cont "was apricots…"
+	line "fifth answer"
+	cont "was a Nugget…"
 
 	para "Oops! I should get"
 	line "back to the Gym!"

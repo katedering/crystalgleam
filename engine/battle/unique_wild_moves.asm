@@ -41,12 +41,14 @@ CheckUniqueWildMove:
 	; always teach moves for certain Pokémon
 	ld a, c
 	cp MAHOGANY_TOWN
-	jr z, .TeachMove ; assume this is for Explosion in TeamRocketBaseB1F
+	jr z, .TeachMove    ; assume this is for Explosion in TeamRocketBaseB1F
 	cp UNION_CAVE
-	jr z, .TeachMove ; assume this is a Lapras in UnionCaveB2F
+	jr z, .TeachMove    ; assume this is a Lapras in UnionCaveB2F
+	cp VIOLET_OUTSKIRTS ; assume this is the Shiny Misdreavus
+	jr z, .TeachMove
 	ld a, b
 	cp SURF
-	jr z, .TeachMove ; assume only Pikachu can learn Surf
+	jr z, .TeachMove    ; assume only Pikachu can learn Surf
 
 	call Random
 	add a

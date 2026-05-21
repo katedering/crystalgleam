@@ -90,11 +90,13 @@ BurnedTowerFirebreatherDickBattleScript:
 	setevent EVENT_BEAT_FIREBREATHER_DICK
 	setscene SCENE_BURNEDTOWER1F_RIVAL_BATTLE
 	reloadmapafterbattle
+	playmusic MUSIC_BURNED_TOWER 
 	end
 
 .lost:
 	disappear BURNEDTOWER1F_FIREBREATHER_DICK_ASHES
 	reloadmapafterbattle
+	playmusic MUSIC_BURNED_TOWER 
 	end
 
 BurnedTowerRivalBattleScript:
