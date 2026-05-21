@@ -1,3 +1,4 @@
+
 VermilionPort_MapScriptHeader:
 	def_scene_scripts
 	scene_script VermilionPortAskEnterShipScene, SCENE_VERMILIONPORT_ASK_ENTER_SHIP
@@ -14,7 +15,8 @@ VermilionPort_MapScriptHeader:
 	coord_event  7, 11, SCENE_VERMILIONPORT_ASK_ENTER_SHIP, VermilionPortWalkUpToShipScript
 
 	def_bg_events
-	bg_event 27, 13, BGEVENT_ITEM + IRON, EVENT_VERMILION_PORT_HIDDEN_IRON
+	bg_event 26, 13, BGEVENT_READ, VermilionPortTruckScript, -1
+	bg_event 15, 11, BGEVENT_ITEM + IRON, EVENT_VERMILION_PORT_HIDDEN_IRON
 
 	def_object_events
 	object_event  7, 17, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionPortSailorAtGangwayScript, EVENT_VERMILION_PORT_SAILOR_AT_GANGWAY
@@ -268,4 +270,58 @@ VermilionPortSuperNerdText:
 	para "I hear many rare"
 	line "#mon live over"
 	cont "there."
+	done
+
+VermilionPortTruckScript:
+	opentext
+	checkkeyitem OLD_KEY
+	iftruefwd .OldSeaMap
+	writetext .TruckLockedText
+	waitbutton
+	closetext
+	end
+	
+.OldSeaMap:
+	checkkeyitem OLD_SEA_MAP
+	iftruefwd .AlreadyGot
+	writetext .ThereIsAMapText
+	promptbutton
+	verbosegivekeyitem OLD_SEA_MAP
+	waitbutton
+	closetext
+	end
+
+.AlreadyGot
+	writetext .AlreadyGotText
+	waitbutton
+	closetext
+	end
+
+.TruckLockedText:
+	text "The truck is"
+	line "locked…"
+	
+	para "It looks like"
+	line "there is a map"
+	cont "on the seat."
+	done
+
+.ThereIsAMapText:
+	text "The truck is"
+	line "locked…"
+	
+	para "It looks like"
+	line "there is a map"
+	cont "on the seat."
+	
+	para "<PLAYER> used the"
+	line "Old Key on the"
+	cont "truck's door."
+	
+	para "It worked!"
+	done
+
+.AlreadyGotText:
+	text "There's nothing"
+	line "else in the truck…"
 	done
