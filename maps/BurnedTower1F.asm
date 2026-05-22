@@ -64,7 +64,8 @@ BurnedTower1FEusineTriggerScript:
 	end
 
 BurnedTowerFirebreatherDickBattleScript:
-	playmusic MUSIC_HIKER_ENCOUNTER
+	loadtrainer FIREBREATHER, DICK
+	encountermusic
 	showemote EMOTE_SHOCK, BURNEDTOWER1F_FIREBREATHER_DICK, 30
 	applyonemovement BURNEDTOWER1F_FIREBREATHER_DICK, step_up
 	turnobject PLAYER, DOWN
@@ -83,20 +84,17 @@ BurnedTowerFirebreatherDickBattleScript:
 
 	winlosstext FirebreatherDickBeatenText, 0
 	setlasttalked BURNEDTOWER1F_FIREBREATHER_DICK
-	loadtrainer FIREBREATHER, DICK
 	startbattle
 	iftruefwd .lost
 	disappear BURNEDTOWER1F_FIREBREATHER_DICK
 	setevent EVENT_BEAT_FIREBREATHER_DICK
 	setscene SCENE_BURNEDTOWER1F_RIVAL_BATTLE
 	reloadmapafterbattle
-	playmusic MUSIC_BURNED_TOWER 
 	end
 
 .lost:
 	disappear BURNEDTOWER1F_FIREBREATHER_DICK_ASHES
 	reloadmapafterbattle
-	playmusic MUSIC_BURNED_TOWER 
 	end
 
 BurnedTowerRivalBattleScript:
