@@ -48,7 +48,7 @@ BillsHousePCText:
 
 BillsHouseBillScript:
 	checkevent EVENT_BEAT_POKEMANIAC_BILL
-	iftrue_jumptextfaceplayer .AfterText
+	iftruefwd .AfterBattle
 	special SpecialBeastsCheck
 	iffalse_jumptextfaceplayer .IntroText
 	faceplayer
@@ -63,18 +63,60 @@ BillsHouseBillScript:
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_POKEMANIAC_BILL
-	jumpthistext
 
-.AfterText:
-	text "That was one rad"
-	line "battle!"
+.AfterBattle
+	opentext
+	writetext .AfterText
+	waitbutton
+	checkevent EVENT_GOT_BOTH_POKEMON_FROM_BILL
+	iftruefwd .GotBoth
+	checkevent EVENT_GOT_PIKACHU_FROM_BILL
+	iftruefwd .Eevee
+	writetext .PikachuText
+	yesorno
+	iffalsefwd .WaitAMinute
+	waitsfx
+	readvar VAR_PARTYCOUNT
+	ifequalfwd PARTY_LENGTH, .NoRoom
+	givepoke PIKACHU, PIKACHU_PARTNER_FORM, 50, NO_ITEM, CHERISH_BALL
+	setevent EVENT_GOT_PIKACHU_FROM_BILL
+	setevent EVENT_GOT_BOTH_POKEMON_FROM_BILL
+	writetext .GoodbyeText
+	waitbutton
+	closetext
+	end
 
-	para "Any #Maniac"
-	line "would be thrilled"
+.Eevee
+	writetext .EeveeText
+	yesorno
+	iffalsefwd .WaitAMinute
+	waitsfx
+	readvar VAR_PARTYCOUNT
+	ifequalfwd PARTY_LENGTH, .NoRoom
+	givepoke EEVEE, EON_FORM, 50, NO_ITEM, CHERISH_BALL
+	setevent EVENT_GOT_EEVEE_FROM_BILL
+	setevent EVENT_GOT_BOTH_POKEMON_FROM_BILL
+	writetext .GoodbyeText
+	waitbutton
+	closetext
+	end
 
-	para "to see what"
-	line "you've caught."
-	done
+.NoRoom
+	writetext .NoRoomText
+	waitbutton
+	closetext
+	end
+
+.WaitAMinute
+	writetext .WaitText
+	waitbutton
+	closetext
+	end
+
+.GotBoth
+	waitbutton
+	closetext
+	end
 
 .IntroText:
 	text "Bill: Eevee is"
@@ -123,3 +165,61 @@ BillsHouseBillScript:
 .BeatenText:
 	text "Yeehah!"
 	done
+
+.AfterText:
+	text "That was one rad"
+	line "battle!"
+
+	para "Any #Maniac"
+	line "would be thrilled"
+
+	para "to see what"
+	line "you've caught."
+	done
+	
+.PikachuText:
+	text "You know, I still"
+	line "have that Pikachu"
+	
+	para "that you didn't"
+	line "want back in"
+	cont "Ecruteak."
+	
+	para "What about it?"
+	
+	para "Want to train it"
+	line "now?"
+	done
+	
+.EeveeText:
+	text "You know, I still"
+	line "have that Eevee"
+	
+	para "that you didn't"
+	line "want back in"
+	cont "Ecruteak."
+	
+	para "What about it?"
+	
+	para "Want to train it"
+	line "now?"
+	done
+
+.NoRoomText:
+	text "Oh! You don't"
+	line "have room in your"
+	cont "party! Come back"
+	cont "when you do!"
+	done
+
+.WaitText:
+	text "Oh, take your"
+	line "time."
+	done
+
+.GoodbyeText:
+	text "Take good care of"
+	line "that #mon,"
+	cont "<PLAYER>."
+	done
+	
