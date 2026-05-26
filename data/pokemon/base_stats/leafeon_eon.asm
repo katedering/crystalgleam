@@ -1,4 +1,4 @@
-	bst 575,  70, 120, 140,  80,  70,  90
+	bst 575,  70, 120, 140,  80,  70,  95
 	;   bst   hp  atk  def  sat  sdf  spe
 
 	db GRASS, GRASS ; type
