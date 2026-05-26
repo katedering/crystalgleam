@@ -1,4 +1,4 @@
-	bst 615,  80,  75, 125, 145, 110,  80
+	bst 575,  70,  80, 120, 140,  95,  70
 	;   bst   hp  atk  def  sat  sdf  spe
 
 	db ICE, ICE ; type

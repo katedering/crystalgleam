@@ -1,4 +1,4 @@
-	bst 520,  55, 100,  70,  95,  80, 120
+	bst 430,  45,  80,  50,  75,  60, 120
 	;   bst   hp  atk  def  sat  sdf  spe
 
 	db ELECTRIC, ELECTRIC ; type

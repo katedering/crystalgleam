@@ -1,4 +1,4 @@
-	bst 615,  80, 145,  75, 110, 125,  80
+	bst 575,  70, 140,  80,  95, 120,  70
 	;   bst   hp  atk  def  sat  sdf  spe
 
 	db FIRE, FIRE ; type

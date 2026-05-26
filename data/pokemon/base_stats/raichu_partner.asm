@@ -1,4 +1,4 @@
-	bst 580,  65, 110,  80, 105,  90, 130
+	bst 565,  60, 115,  55, 115,  80, 140
 	;   bst   hp  atk  def  sat  sdf  spe
 
 	db ELECTRIC, ELECTRIC ; type

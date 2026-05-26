@@ -1,4 +1,4 @@
-	bst 615, 110,  80,  80, 125, 145,  75
+	bst 575,  95,  70,  70, 120, 140,  80
 	;   bst   hp  atk  def  sat  sdf  spe
 
 	db FAIRY, FAIRY ; type

@@ -1,4 +1,4 @@
-	bst 615, 145,  80,  75, 125, 110,  80
+	bst 575, 140,  70,  80, 120,  95,  70
 	;   bst   hp  atk  def  sat  sdf  spe
 
 	db WATER, WATER ; type

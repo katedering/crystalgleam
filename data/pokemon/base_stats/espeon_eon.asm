@@ -1,4 +1,4 @@
-	bst 615,  80,  80,  75, 145, 110, 125
+	bst 575,  70,  70,  80, 140,  95, 120
 	;   bst   hp  atk  def  sat  sdf  spe
 
 	db PSYCHIC, PSYCHIC ; type
